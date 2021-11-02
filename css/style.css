@@ -1,3 +1,58 @@
+/* VARIABLES */
+
+
+
+/* SELECTORES */
+
 *{
     box-sizing: border-box;
 }
+
+body{
+    width: 100%;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navigation{
+    width:100%;
+    height: 2%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation__list{
+    padding: 0;
+    margin:0;
+}
+
+.navigation__list__element{
+    float: left;
+    display: flex;
+    padding: 10px;
+}
+
+#home{
+    width: 100%;
+    min-height: 180px;
+    max-height: 500px;
+    background-image: url(https://image.shutterstock.com/image-photo/office-top-view-header-260nw-1130869376.jpg);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position-x: left;
+
+    color:black;
+}
+
+.home__title{
+    font-size: 2rem;
+    width: 50%;
+    padding: 10px;
+}
+
+.home__subtitle{
+    font-size: 1rem;
+    padding: 10px;
+}
+
