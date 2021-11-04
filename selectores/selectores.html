@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+    <link rel="stylesheet" href="css/selectores.css">
+</head>
 <body>
+
+    <h1>Selectores</h1>
+    <p>Click aquí para más información de <a class="link azul" href="">Selectores</a> o aquí para más información sobre <a class="link crimson" href="">CSS</a></p>
+
+    <form class="form">
+
+        <h2>Introduce tus datos</h2>
+
+        <div class="text_nombre">
+            <label for="name">Nombre</label>
+            <input data-text="Más información" id="name" class="texto" type="text" placeholder="Nombre">
+        </div>
+
+        <div class="prueba_robot">
+            <label for="checkbox">Prueba de que no eres un robot</label>
+            <input id="checkbox" class="checkbox" type="checkbox">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem repellat possimus, saepe cum assumenda esse similique eum porro quos necessitatibus eaque doloribus sint optio eligendi iure labore dolorum, pariatur aliquam.</p>
+        </div>
+        
+        <div class="input_email">
+            <label for="email">Email</label>
+            <input id="email" type="email" class="e_mail" placeholder="Email">
+        </div>
+
+        <div class="input_tel">
+            <label for="tel">Teléfono</label>
+            <input type="text" id="tel" class="telf" placeholder="Teléfono">
+        </div>
+        
+    </form>
+
+    <section class="especificidad">
+        <p class="bar">Lorem ipsum dolor <span id="foo" class="foo">hola que tal</span> sit amet consectetur, adipisicing elit. Voluptatibus praesentium sint consectetur tempore, amet magnam quae cumque iusto harum? Dolorum atque obcaecati quibusdam ducimus hic voluptatum delectus aliquam alias at!</p>
+    </section>
+
+</body>
+</html>
