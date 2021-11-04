@@ -1,58 +1,78 @@
-/* VARIABLES */
+/********** VARIABLES ***********/
 
 
 
-/* SELECTORES */
+/********* SELECTORES *************/
 
 *{
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100%;
     height: auto;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Zen Antique', serif;
 }
 
-.navigation{
+/************ Navigation menu style **************/
+
+.navigation {
     width:100%;
-    height: 2%;
+    height: 5%;
     display:flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
+
+    background-color: slategray;
 }
 
-.navigation__list{
+.navigation__list {
     padding: 0;
     margin:0;
 }
 
-.navigation__list__element{
+.navigation__list__element {
     float: left;
     display: flex;
     padding: 10px;
 }
 
-#home{
-    width: 100%;
-    min-height: 180px;
-    max-height: 500px;
-    background-image: url(https://image.shutterstock.com/image-photo/office-top-view-header-260nw-1130869376.jpg);
-    background-size: 120%;
-    background-repeat: no-repeat;
-    background-position-x: left;
-
-    color:black;
+.navigation__list__element a{
+    color:white;
+    text-decoration: none;
 }
 
-.home__title{
+/**************** Home style *****************/
+
+#home {
+    width: 100%;
+    height:95%;
+
+    background-color: white;
+
+    color:black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.home__title {
     font-size: 2rem;
     width: 50%;
     padding: 10px;
 }
 
-.home__subtitle{
+.home__subtitle {
     font-size: 1rem;
     padding: 10px;
 }
+
+
+/************ About me section *****************/
+
+#aboutme{
+    background-color: slategray;
+    padding: 20px;
+}
+
+/*************** Contact Section ****************/
 
