@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+}
+
+.contact__page{
+    width:100%;
+    padding-top: 20px;
+    display: flex;  
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact__element{
+    width: 350px;
+    max-width: 500px;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.information{
+
+}
+
+.form__contact{
+    background-color: #35CC61;
+}
