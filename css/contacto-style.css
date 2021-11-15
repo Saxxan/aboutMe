@@ -4,6 +4,7 @@
 
 body{
     font-family: 'Rubik', cursive;
+    font-size: 1.25rem;
 }
 
 .contact__page{
@@ -11,19 +12,20 @@ body{
     padding-top: 20px;
     display: flex;  
     flex-wrap: wrap; 
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 .contact__element{
-    width: 350px;
-    max-width: 500px;
+    width: 100%;
+    max-width: 320px;
     padding: 5px 10px;
     margin: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
+
+/******************* Information section ****************/
 
 .information{
     text-align: center;
@@ -35,17 +37,31 @@ body{
     font-size: 36px;
     font-weight:800;
     line-height: 40px;
+    margin-top:10px;
 }
 
 .information .mailbox{
+    color:#35CC61;
+    text-align: center;
+    cursor:pointer;
+}
 
+.mailbox:hover{
+    color:black;
+}
+
+.information .mailbox img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
 }
 
 .information .mailbox .email{
-    color: #35CC61;
     text-decoration: none;
-    display: block;
+    display:inline-block;
 }
+
+/******* Social media footer ********/
 
 .information footer h5{
     font-weight: 900;
@@ -56,15 +72,17 @@ body{
 
 .information footer .socialmedia__container{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .information footer .socialmedia__container .sc__element{
     width: 50px;
     height: 50px;
     padding: 10px;
+    margin-right: 10px;
     background-position: center;
     background-repeat: no-repeat;
+    transition: transform .3s ease-in-out;
 }
 
 .information footer .socialmedia__container .facebook{
@@ -83,16 +101,24 @@ body{
     background-image: url("https://img.icons8.com/color/48/000000/linkedin-circled.png"); 
 }
 
+.sc__element:hover{
+    transform: scale(1.1);
+}
+
+/************************** Form section ****************************/
+
 .form__contact{
     background-color: #EBFAEF;
 }
 
 .form__element{
     padding: 10px;
-    margin: 10px;
-    width: 100%;
+    margin: 5px auto 5px;
+    width: 95%;
     border-radius: 4px;
     border-color:#4E4D4D33;
+
+    text-align: start;
 }
 
 .form__title{
@@ -103,7 +129,41 @@ body{
     color: #33475B;
 }
 
+.form__contact .message__input{
+    height: 150px;
+}
+
 input[type="submit"]{
     background-color: #35CC61;
     color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: #33475B;
+}
+
+
+/************************* Mediaqueries ***********************/
+
+
+@media screen and (min-width: 650px){
+    .contact__element{
+        max-width: 650px;
+    }
+    .information .information__title{
+        font-size:56px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .contact__element{
+        width:50%;
+        max-width: 500px;
+        height: 500px;
+    }
 }
