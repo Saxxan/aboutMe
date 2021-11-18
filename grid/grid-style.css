@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+/************ $html *****************/
+
+html, body {
+    height: 100%;
+}
+
+/***************** $body *************/
+
+body {
+
+}
+
+/***************** $grid structure  ********************/
+
+
+/* Grid container */
+
+.grid__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width:100%;
+    height: 700px;
+}
+
+/* Grid items */
+
+.grid__item {
+    border: 1px solid black;
+}
+
+/* Grid item with 100% width */
+
+.width-100 {
+    width:100%;
+}
+
+/* Grid item with 50% width */
+
+.width-50 {
+    width:50%;
+}
+
+/* Grid item width 25% width */
+
+.width-25 {
+    width:25%;
+}

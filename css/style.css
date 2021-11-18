@@ -1,8 +1,8 @@
-/********** VARIABLES ***********/
+/********** $VARIABLES ***********/
 
 
 
-/********* SELECTORES *************/
+/********* $SELECTORES *************/
 
 *{
     box-sizing: border-box;
@@ -14,7 +14,7 @@ body {
     font-family: 'Zen Antique', serif;
 }
 
-/************ Navigation menu style **************/
+/************ $Navigation menu style **************/
 
 .navigation {
     width:100%;
@@ -43,7 +43,7 @@ body {
     text-decoration: none;
 }
 
-/**************** Home style *****************/
+/**************** $Home style *****************/
 
 #home {
     width: 100%;
@@ -67,12 +67,12 @@ body {
 }
 
 
-/************ About me section *****************/
+/************ $About me section *****************/
 
 #aboutme{
     background-color: slategray;
     padding: 20px;
 }
 
-/*************** Contact Section ****************/
+/*************** $Contact Section ****************/
 
