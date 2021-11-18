@@ -11,7 +11,7 @@ html, body {
 /***************** $BODY *************/
 
 body {
-    font-size: 22px;
+    font-size: 20px;
     background-color: cornflowerblue;
     margin: 0;
     padding: 0;
@@ -39,6 +39,19 @@ body {
     padding: 20px;
     background-color:white;
     margin: 16px;
+
+    transition: transform .5s ease-in-out;
+}
+
+
+/* Grid items hover zoom 
+*
+*   Just for fun
+*
+*/
+
+.grid__item:hover{
+    transform: scale(1.1);
 }
 
 
@@ -71,12 +84,13 @@ body {
 *   mobile devices
 *
 */
+
 @media screen and (max-width:800px) {
     .width-50 {
-        flex: 100%;
+        flex: 0 0 calc(100% - 32px);
     }
 
     .width-25 {
-        flex: 100%
+        flex: 0 0 calc(100% - 32px);
     }
 }
