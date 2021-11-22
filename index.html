@@ -1,102 +1,69 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA_Compatible" content="IE-edge">
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
-        <title>Salvador Puche Ibáñez</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Zen+Antique&display=swap" rel="stylesheet">
-    </head>
-    <body>
-<!------------------------Navigation menu---------------------------------------->
-        <header>
-            <nav class="navigation">
-                <ul class="navigation__list">
-                    <li class="navigation__list__element"><a href="#home">Home</a></li>
-                    <li class="navigation__list__element"><a href="#aboutme">About me</a></li>
-                    <li class="navigation__list__element"><a href="#main">Main</a></li>
-                </ul>
-            </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salvador Puche Ibáñez</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!----------------- MAIN is grid container ----------------------------------->
+    <main class="grid__container">
+
+
+        <!--------------------- Header ----------------------------------->
+        <header class="grid__item">
+
+            <h1>header</h1>
+
         </header>
 
-<!---------------------------Website home----------------------------------------->
 
-        <section id="home">
-            <h1 class="home__title">Salvador Puche Ibáñez</h1>
-            <h2 class="home__subtitle">Estudiante de diseño y desarrollo web Frontend en ESAT</h2>
+        <!---------------- Section Content pages ------------------------->
+        <section class="grid__item content">
+
+            <!------------ Home content section --------------->
+            <section class="content__section home"></section>
+
+            <!------------ About content section -------------->
+            <section class="content__section about"></section>
+
+            <!----------- Skills content section -------------->
+            <section class="content__section skills"></section>
+
+            <!----------- Contact content section ------------->
+            <section class="content__section contact"></section>
+
         </section>
 
-        <hr>
 
-<!-------------------------About me section---------------------------------------->
+        <!--------------- Navigation menu Section ------------------------->
+        <section class="grid__item menu__container">
 
-        <section id="aboutme">
-            <p>Descripción sobre mi</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis repudiandae inventore, nihil quasi ipsum unde quisquam, dolores eaque cupiditate reiciendis odio vitae et voluptates alias perspiciatis error laboriosam est. Consectetur!</p>
+            <nav class="menu">
+
+                <!------------- Home menu option ------------------>
+                <div class="menu__item menu__home">Home</div>
+
+                <!------------- About menu option ----------------->
+                <div class="menu__item menu__about">About</div>
+
+                <!------------- Skills menu option ---------------->
+                <div class="menu__item menu__skill">Skills</div>
+
+                <!------------- Contact menu option --------------->
+                <div class="menu__item menu__contact">Contact</div>
+
+            </nav>
+
         </section>
 
-        <hr>
-        
-        
-<!---------------------Experience, skills, education section--------------------------->
-
-        <main id="main">
-            <ul>
-                <il>
-                    <h3>Experiencia</h3>
-                    <ul>
-                        <li>
-                            <h4>1</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, beatae ipsa! Molestias ea tempora dicta, fuga perferendis iure molestiae maxime veniam explicabo eveniet perspiciatis quia recusandae atque, modi, quam labore!</p>
-                        </li>
-                        <li>
-                            <h4>2</h4>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae ut obcaecati animi alias suscipit! Fuga labore quod ab explicabo debitis consequuntur ratione officiis harum quaerat! Expedita doloremque dolorum ipsa asperiores?</p>
-                        </li>
-                    </ul>
-                    
-                </il>
-                <il>
-                    <h3>Formación</h3>
-                    <ul>
-                        <li>
-                            <h4>1</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eveniet, maiores quibusdam ex porro incidunt repellendus quod sed libero fuga omnis sint, corrupti sunt dolore. Adipisci odio voluptas quis corrupti.</p>
-                        </li>
-                        <li>
-                            <h4>2</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptatibus non modi magnam consequatur vel odit maiores doloremque officia aut quas repellendus vitae nesciunt placeat tenetur laboriosam mollitia, ad magni.</p>
-                        </li>
-                    </ul>
-                <il>
-                    <h3>Habilidades</h3>
-                    <ul>
-                        <li>
-                            <h4>1</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, dicta pariatur ut nam placeat illum minus iste asperiores rerum consequatur illo eius maxime unde accusantium. Placeat sint obcaecati non totam.</p>
-                        </li>
-                        <li>
-                            <h4>2</h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum similique aspernatur eaque repudiandae ut eius excepturi ab! Possimus fugiat tempore dolores, similique neque quisquam, illum et dolore fuga perspiciatis voluptates!</p>
-                        </li>
-                    </ul>
-                </il>
-            </ul>
-        </main>
-
-        <hr>
-
-<!-------------------------------Contact section: footer----------------------------------->
-
-        <footer>
-            <h5 class="footer__title">Contacto</h5>
-            <ul>
-                <li>Email: <a href="mailto:salvapucheibanez@gmail.com">salva.pucheibanez@gmail.com</a></li>
-                <li>Telefono</li>
-                <li>Etc</li>
-            </ul>
-        </footer>
-    </body>
+    </main>
+    
+</body>
 </html>
