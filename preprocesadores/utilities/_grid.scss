@@ -1,0 +1,17 @@
+//----$GRID
+
+.grid {
+    display: flex;
+
+    &__cell {
+        padding: $space;
+
+        &--50 {
+            flex: 0 0 50%;
+        }
+
+        &--10 {
+            flex: 0 0 10%;
+        }
+    }
+}

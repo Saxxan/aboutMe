@@ -1,0 +1,10 @@
+@import "/preprocesadores/site/_site.scss";
+@import "/preprocesadores/atmosphere/_tipography.scss";
+@import "/preprocesadores/utilities/_grid.scss";
+@import "/preprocesadores/variables/_variable.scss";
+@import "/preprocesadores/lib/_mixins.scss"
+
+
+h1 {
+    font-size: $unit * 3;
+}
