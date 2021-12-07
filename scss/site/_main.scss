@@ -1,0 +1,32 @@
+main {
+    height: 70vh;
+    border: 1px dashed $white;
+
+    & section {
+        width: 100vw;
+        height: 70vh;
+        position: absolute;
+        border: 1px dashed $white;
+    }
+
+    & .home {
+        background-color: red;
+        left: 0;
+        right: 0;
+    }
+
+    & .about {
+        background-color: blue;
+        left: 100vw;
+    }
+
+    & .skills {
+        background-color: green;
+        left: 100vw;
+    }
+
+    & .contact {
+        background-color: purple;
+        left: 100vw;
+    }
+}
