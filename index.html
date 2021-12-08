@@ -15,20 +15,36 @@
     <header>HEADER</header>
 
     <main>
-
-        <section class="home">HOME</section>
-        <section class="about">ABOUT</section>
-        <section class="skills">SKILLS</section>
-        <section class="contact">CONTACT</section>
-
+        <section class="sections">
+            <section class="home">HOME</section>
+            <section class="about">ABOUT</section>
+            <section class="skills">SKILLS</section>
+            <section class="contact">CONTACT</section>
+        </section>
     </main>
 
-    <nav>
+    <nav class="nav--container">
         <ul class="menu">
-            <li class="menu__option">Home</li>
-            <li class="menu__option">About</li>
-            <li class="menu__option">Skills</li>
-            <li class="menu__option">Contact</li>
+            <li class="menu__option--home">
+                <img src="iconos/home-icon.svg" alt="">
+                <label for="home--checkbox">HOME</label>
+                <input type="radio" name="nav" id="home--checkbox" class="check--home">
+            </li>
+            <li class="menu__option--about">
+                <img src="iconos/about-icon.svg" alt="">
+                <label for="about--checkbox">ABOUT</label>
+                <input type="radio" name="nav" id="about--checkbox">
+            </li>
+            <li class="menu__option--skills">
+                <img src="iconos/skill-icon.svg" alt="">
+                <label for="skill--checkbox">SKILLS</label>
+                <input type="radio" name="nav" id="skill--checkbox">
+            </li>
+            <li class="menu__option--contact">
+                <img src="iconos/contact-icon.svg" alt="">
+                <label for="contact--checkbox">CONTACT</label>
+                <input type="radio" name="nav" id="contact--checkbox">
+            </li>
         </ul>
     </nav>
 

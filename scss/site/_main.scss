@@ -1,32 +1,41 @@
 main {
-    height: 70vh;
+    height: 70%;
+    width: 90%;
+    margin:auto;
     border: 1px dashed $white;
+    overflow:hidden;
 
-    & section {
-        width: 100vw;
-        height: 70vh;
-        position: absolute;
-        border: 1px dashed $white;
-    }
+    & .sections {
+        width: 3000px;
+        height: 70%;
+        display: flex;
+        transition: transform .5s ease-in-out;
+    
 
-    & .home {
-        background-color: red;
-        left: 0;
-        right: 0;
-    }
+        & section {
+            width: 30%;
+            height: 70vh;
+            display: flex;
+            border: 1px dashed $white;
+        }
 
-    & .about {
-        background-color: blue;
-        left: 100vw;
-    }
+        & .home {
+            background-color: red;
+        }
 
-    & .skills {
-        background-color: green;
-        left: 100vw;
-    }
+        & .about {
+            background-color: blue;
+            transform: translateX(25%);
+        }
 
-    & .contact {
-        background-color: purple;
-        left: 100vw;
+        & .skills {
+            background-color: green;
+            transform: translateX(50%);
+        }
+
+        & .contact {
+            background-color: purple;
+            transform: translateX(75%);
+        }
     }
 }

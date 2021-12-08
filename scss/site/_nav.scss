@@ -1,4 +1,50 @@
-nav {
+.nav--container {
     height: 15vh;
-    border: 1px dashed $white
+    border: 1px dashed $white;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 40px;
+    font-size: $menu--font--size--mobile;
+    color: $grey;
+
+    & img {
+        padding: $padding;
+    }
+
+    & input {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .menu {
+        max-width: 650px;
+
+        & li {
+            width: 130px;
+            font-size: $menu--font--size--deskopt;
+
+            & img {
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
 }
