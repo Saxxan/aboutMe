@@ -5,12 +5,13 @@
 }
 
 html {
-    height: 100vh;
+    height: 100%;
 
-    & body {
-        height: 100vh;
+    &, body {
+        height: 100%;
         background-color: $black;
         color: $white;
         font-family: $body--font--family;
+        // overflow: hidden;
     }
 }

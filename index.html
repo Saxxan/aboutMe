@@ -15,38 +15,48 @@
     <header>HEADER</header>
 
     <main>
-        <section class="sections">
-            <section class="home">HOME</section>
-            <section class="about">ABOUT</section>
-            <section class="skills">SKILLS</section>
-            <section class="contact">CONTACT</section>
-        </section>
+        <div class="container2d">
+            <section class="sections">
+                <section class="section home">
+                    <h1>HOME</h1>
+                </section>
+                <section class="section about">
+                    <h1>ABOUT</h1>
+                </section>
+                <section class="section skills">
+                    <h1>SKILLS</h1>
+                </section>
+                <section class="section contact">
+                    <h1>CONTACT</h1>
+                </section>
+            </section>
+        </div>
+        
+        <nav class="nav--container">
+            <ul class="menu">
+                <li class="menu__option--home">
+                    <img src="iconos/home-icon.svg" alt="">
+                    <label for="home--checkbox">HOME</label>
+                    <input type="radio" name="nav" id="home--checkbox" class="check--home">
+                </li>
+                <li class="menu__option--about">
+                    <img src="iconos/about-icon.svg" alt="">
+                    <label for="about--checkbox">ABOUT</label>
+                    <input type="radio" name="nav" id="about--checkbox" class="check--about">
+                </li>
+                <li class="menu__option--skills">
+                    <img src="iconos/skill-icon.svg" alt="">
+                    <label for="skill--checkbox">SKILLS</label>
+                    <input type="radio" name="nav" id="skill--checkbox" class="check--skills">
+                </li>
+                <li class="menu__option--contact">
+                    <img src="iconos/contact-icon.svg" alt="">
+                    <label for="contact--checkbox">CONTACT</label>
+                    <input type="radio" name="nav" id="contact--checkbox" class="check--contact">
+                </li>
+            </ul>
+        </nav>
     </main>
-
-    <nav class="nav--container">
-        <ul class="menu">
-            <li class="menu__option--home">
-                <img src="iconos/home-icon.svg" alt="">
-                <label for="home--checkbox">HOME</label>
-                <input type="radio" name="nav" id="home--checkbox" class="check--home">
-            </li>
-            <li class="menu__option--about">
-                <img src="iconos/about-icon.svg" alt="">
-                <label for="about--checkbox">ABOUT</label>
-                <input type="radio" name="nav" id="about--checkbox">
-            </li>
-            <li class="menu__option--skills">
-                <img src="iconos/skill-icon.svg" alt="">
-                <label for="skill--checkbox">SKILLS</label>
-                <input type="radio" name="nav" id="skill--checkbox">
-            </li>
-            <li class="menu__option--contact">
-                <img src="iconos/contact-icon.svg" alt="">
-                <label for="contact--checkbox">CONTACT</label>
-                <input type="radio" name="nav" id="contact--checkbox">
-            </li>
-        </ul>
-    </nav>
 
 </body>
 </html>

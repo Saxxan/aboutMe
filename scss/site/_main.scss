@@ -1,41 +1,45 @@
 main {
-    height: 70%;
-    width: 90%;
+    height: 85%;
+    width: 100%;
     margin:auto;
     border: 1px dashed $white;
-    overflow:hidden;
 
-    & .sections {
-        width: 3000px;
-        height: 70%;
-        display: flex;
-        transition: transform .5s ease-in-out;
+    .container2d {
+        height: 80%;
+        width: 100%;
     
 
-        & section {
-            width: 30%;
-            height: 70vh;
+        .sections {
+            height: 68%;
+            width: 100%;
+            position: absolute;
             display: flex;
-            border: 1px dashed $white;
-        }
+            transition: transform .5s ease-in-out;
 
-        & .home {
-            background-color: red;
-        }
+            .section {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
 
-        & .about {
-            background-color: blue;
-            transform: translateX(25%);
-        }
+            .home {
+                background-color: red;
+            }
 
-        & .skills {
-            background-color: green;
-            transform: translateX(50%);
-        }
+            .about {
+                background-color: blue;
+                transform: translateX(100%);
+            }
 
-        & .contact {
-            background-color: purple;
-            transform: translateX(75%);
+            .skills {
+                background-color: green;
+                transform: translateX(200%);
+            }
+
+            .contact {
+                background-color: purple;
+                transform: translateX(300%);
+            }
         }
-    }
+    }   
 }

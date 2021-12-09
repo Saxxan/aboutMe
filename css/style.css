@@ -6,30 +6,33 @@
 }
 
 html {
-  height: 100vh;
+  height: 100%;
 }
-html body {
-  height: 100vh;
+html, html body {
+  height: 100%;
   background-color: black;
   color: white;
   font-family: "Montserrat", sans-serif;
 }
 
 header {
-  height: 15vh;
-  border: 1px dashed white;
+  height: 15%;
 }
 
 main {
-  height: 70%;
-  width: 90%;
+  height: 85%;
+  width: 100%;
   margin: auto;
   border: 1px dashed white;
-  overflow: hidden;
 }
-main .sections {
-  width: 3000px;
-  height: 70%;
+main .container2d {
+  height: 80%;
+  width: 100%;
+}
+main .container2d .sections {
+  height: 68%;
+  width: 100%;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,36 +41,34 @@ main .sections {
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
-main .sections section {
-  width: 30%;
-  height: 70vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: 1px dashed white;
+main .container2d .sections .section {
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
-main .sections .home {
+main .container2d .sections .home {
   background-color: red;
 }
-main .sections .about {
+main .container2d .sections .about {
   background-color: blue;
-  -webkit-transform: translateX(25%);
-          transform: translateX(25%);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
-main .sections .skills {
+main .container2d .sections .skills {
   background-color: green;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
 }
-main .sections .contact {
+main .container2d .sections .contact {
   background-color: purple;
-  -webkit-transform: translateX(75%);
-          transform: translateX(75%);
+  -webkit-transform: translateX(300%);
+          transform: translateX(300%);
 }
 
-.nav--container {
-  height: 15vh;
+main .nav--container {
+  height: 20%;
   border: 1px dashed white;
+  background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,9 +76,8 @@ main .sections .contact {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
-.menu {
-  height: 15vh;
+main .nav--container .menu {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,8 +89,7 @@ main .sections .contact {
           align-items: center;
   gap: 25px;
 }
-
-.menu li {
+main .nav--container .menu li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,23 +108,31 @@ main .sections .contact {
   font-size: 12px;
   color: #9F9F9F;
 }
-.menu li img {
+main .nav--container .menu li img {
   padding: 8px;
 }
-.menu li input {
-  display: none;
+main .nav--container .menu li input.check--home:checked main .container2d .sections {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
-
+main .nav--container .menu li input.check--about:checked main .container2d .sections {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+main .nav--container .menu li input.check--skills:checked main .container2d .sections {
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+}
+main .nav--container .menu li input.check--contact:checked main .container2d .sections {
+  -webkit-transform: translateX(-300%);
+          transform: translateX(-300%);
+}
 @media screen and (min-width: 1024px) {
-  .menu {
+  main .nav--container .menu {
     max-width: 650px;
   }
-  .menu li {
+  main .nav--container .menu li {
     width: 130px;
     font-size: 15px;
-  }
-  .menu li img {
-    width: 35px;
-    height: 35px;
   }
 }
