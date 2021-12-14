@@ -34,20 +34,20 @@ main {
                 // display: none;
             }
 
-            .check--home:checked {
-                @include translate-horizontal(0);
+            .check--home:checked .sections{
+                transform: translateX(0);
             }
 
-            .check--about:checked {
-                @include translate-horizontal(-25%);   
+            .check--about:checked .sections {
+                transform: translateX(-25%);  
             }
 
-            .check--skills:checked {
-                @include translate-horizontal(-50%);
+            .check--skills:checked .sections {
+                transform: translateX(-50%);
             }
 
-            .check--contact:checked {
-                @include translate-horizontal(-75%);
+            .check--contact:checked .sections {
+                transform: translateX(-75%);
             }
         }
 
