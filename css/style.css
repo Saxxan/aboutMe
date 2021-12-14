@@ -13,10 +13,12 @@ html, html body {
   background-color: black;
   color: white;
   font-family: "Montserrat", sans-serif;
+  overflow: hidden;
 }
 
 header {
   height: 15%;
+  width: 100%;
 }
 
 main {
@@ -28,10 +30,11 @@ main {
 main .container2d {
   height: 80%;
   width: 100%;
+  overflow-x: scroll;
 }
 main .container2d .sections {
   height: 68%;
-  width: 100%;
+  width: 400%;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,7 +45,7 @@ main .container2d .sections {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 main .container2d .sections .section {
-  width: 100%;
+  width: 25%;
   height: 100%;
   position: absolute;
 }
@@ -89,7 +92,7 @@ main .nav--container .menu {
           align-items: center;
   gap: 25px;
 }
-main .nav--container .menu li {
+main .nav--container li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,24 +111,24 @@ main .nav--container .menu li {
   font-size: 12px;
   color: #9F9F9F;
 }
-main .nav--container .menu li img {
+main .nav--container li img {
   padding: 8px;
 }
-main .nav--container .menu li input.check--home:checked main .container2d .sections {
+main .nav--container li .check--home:checked .sections {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
-main .nav--container .menu li input.check--about:checked main .container2d .sections {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+main .nav--container li .check--about:checked .sections {
+  -webkit-transform: translateX(-25%);
+          transform: translateX(-25%);
 }
-main .nav--container .menu li input.check--skills:checked main .container2d .sections {
-  -webkit-transform: translateX(-200%);
-          transform: translateX(-200%);
+main .nav--container li .check--skills:checked .sections {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
-main .nav--container .menu li input.check--contact:checked main .container2d .sections {
-  -webkit-transform: translateX(-300%);
-          transform: translateX(-300%);
+main .nav--container li .check--contact:checked .sections {
+  -webkit-transform: translateX(-75%);
+          transform: translateX(-75%);
 }
 @media screen and (min-width: 1024px) {
   main .nav--container .menu {

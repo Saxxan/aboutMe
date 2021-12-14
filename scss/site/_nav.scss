@@ -16,7 +16,7 @@ main {
             gap: 25px;
         }
 
-        .menu li {
+        li {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -32,30 +32,22 @@ main {
 
             input {
                 // display: none;
+            }
 
-                &.check--home:checked {
-                    main .container2d .sections {
-                        transform: translateX(0);
-                    }
-                }
+            .check--home:checked {
+                @include translate-horizontal(0);
+            }
 
-                &.check--about:checked {
-                    main .container2d .sections {
-                        transform: translateX(-100%);
-                    }
-                }
+            .check--about:checked {
+                @include translate-horizontal(-25%);   
+            }
 
-                &.check--skills:checked {
-                    main .container2d .sections {
-                        transform: translateX(-200%);
-                    }
-                }
+            .check--skills:checked {
+                @include translate-horizontal(-50%);
+            }
 
-                &.check--contact:checked {
-                    main .container2d .sections {
-                        transform: translateX(-300%);
-                    }
-                }
+            .check--contact:checked {
+                @include translate-horizontal(-75%);
             }
         }
 

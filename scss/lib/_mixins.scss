@@ -1,0 +1,5 @@
+@mixin translate-horizontal ($desplazamiento) {
+    .sections {   
+        transform: translateX($desplazamiento);
+    }   
+}

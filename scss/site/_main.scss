@@ -7,17 +7,18 @@ main {
     .container2d {
         height: 80%;
         width: 100%;
+        overflow-x:scroll;
     
 
         .sections {
             height: 68%;
-            width: 100%;
+            width: 400%;
             position: absolute;
             display: flex;
             transition: transform .5s ease-in-out;
 
             .section {
-                width: 100%;
+                width: 25%;
                 height: 100%;
                 position: absolute;
             }
