@@ -8,7 +8,8 @@
 html {
   height: 100%;
 }
-html, html body {
+
+html body {
   height: 100%;
   background-color: black;
   color: white;
