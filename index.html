@@ -15,10 +15,27 @@
     <header>HEADER</header>
 
     <main>
+
+        <input type="radio" name="nav" id="home--checkbox" class="check--home">
+        <input type="radio" name="nav" id="about--checkbox" class="check--about">
+        <input type="radio" name="nav" id="skill--checkbox" class="check--skills">
+        <input type="radio" name="nav" id="contact--checkbox" class="check--contact">
+
         <div class="container2d">
             <section class="sections">
                 <section class="section home">
-                    <h1>HOME</h1>
+                    <div class="home--superior">
+                        <img src="" alt="">
+                        <h1>Salvador Puche Ibáñez</h1>
+                    </div>
+                    <div class="home--inferior">
+                        <div class="home--inferior__text">
+                            <h2>Electronic engineer</h2>
+                            <h2>Front-end Developer</h2>
+                            <h2>UX/UI Designer</h2>
+                        </div>
+                        <img src="" alt="">
+                    </div>
                 </section>
                 <section class="section about" id="about">
                     <h1>ABOUT</h1>
@@ -31,31 +48,26 @@
                 </section>
             </section>
         </div>
+
+        <ul class="menu">
+            <li class="menu__option--home">
+                <img src="iconos/home-icon.svg" alt="">
+                <label for="home--checkbox">HOME</label>
+            </li>
+            <li class="menu__option--about">
+                <img src="iconos/about-icon.svg" alt="">
+                <label for="about--checkbox">ABOUT</label>  
+            </li>
+            <li class="menu__option--skills">
+                <img src="iconos/skill-icon.svg" alt="">
+                <label for="skill--checkbox">SKILLS</label>
+            <li class="menu__option--contact">
+                <img src="iconos/contact-icon.svg" alt="">
+                <label for="contact--checkbox">CONTACT</label>
+            </li>
+        </ul>
         
-        <nav class="nav--container">
-            <ul class="menu">
-                <li class="menu__option--home">
-                    <img src="iconos/home-icon.svg" alt="">
-                    <label for="home--checkbox">HOME</label>
-                    <input type="radio" name="nav" id="home--checkbox" class="check--home">
-                </li>
-                <li class="menu__option--about">
-                    <img src="iconos/about-icon.svg" alt="">
-                    <label for="about--checkbox">ABOUT</label>
-                    <input type="radio" name="nav" id="about--checkbox" class="check--about">
-                </li>
-                <li class="menu__option--skills">
-                    <img src="iconos/skill-icon.svg" alt="">
-                    <label for="skill--checkbox">SKILLS</label>
-                    <input type="radio" name="nav" id="skill--checkbox" class="check--skills">
-                </li>
-                <li class="menu__option--contact">
-                    <img src="iconos/contact-icon.svg" alt="">
-                    <label for="contact--checkbox">CONTACT</label>
-                    <input type="radio" name="nav" id="contact--checkbox" class="check--contact">
-                </li>
-            </ul>
-        </nav>
+        
     </main>
 
 </body>

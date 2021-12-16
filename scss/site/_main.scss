@@ -1,14 +1,9 @@
 main {
     height: 85%;
-    width: 100%;
-    margin:auto;
-    border: 1px dashed $white;
+    margin: auto;
 
     .container2d {
         height: 80%;
-        width: 100%;
-        overflow-x: scroll;
-    
 
         .sections {
             height: 68%;
@@ -20,25 +15,29 @@ main {
             .section {
                 width: 25%;
                 height: 100%;
-                position: absolute;
+                position: absolute;   
             }
 
             .home {
-                background-color: red;
+                display: flex;
+                flex-direction: column;
+
+                & div {
+                    display: flex;
+                    justify-content: center;
+                }
             }
 
             .about {
-                background-color: blue;
                 transform: translateX(100%);
             }
 
             .skills {
-                background-color: green;
                 transform: translateX(200%);
             }
 
             .contact {
-                background-color: purple;
+
                 transform: translateX(300%);
             }
         }

@@ -1,65 +1,35 @@
-main {
+.menu {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 
-    .nav--container {
-        height: 20%;
-        border: 1px dashed $white;
-        background-color: $black;
+    li {
         display: flex;
+        flex-direction: column;
         justify-content: center;
-    
+        align-items: center;
+        width: 80px;
+        height: 60px;
+        font-size: $menu--font--size--mobile;
+        color: $grey;
 
+        img {
+            padding: $padding;
+            width: $icon-dimension;
+            height: $icon-dimension;
+        }
+    }
+
+
+    @media screen and (min-width: 1024px) {
         .menu {
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 25px;
-        }
+            max-width: 650px;
 
-        li {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 60px;
-            height: 40px;
-            font-size: $menu--font--size--mobile;
-            color: $grey;
-
-            img {
-                padding: $padding;
-            }
-
-            input {
-                // display: none;
-            }
-
-            .check--home:checked .sections{
-                transform: translateX(0);
-            }
-
-            .check--about:checked .sections {
-                transform: translateX(-25%);  
-            }
-
-            .check--skills:checked .sections {
-                transform: translateX(-50%);
-            }
-
-            .check--contact:checked .sections {
-                transform: translateX(-75%);
-            }
-        }
-
-
-        @media screen and (min-width: 1024px) {
-            .menu {
-                max-width: 650px;
-
-                li {
-                    width: 130px;
-                    font-size: $menu--font--size--deskopt;
-                }
+            li {
+                width: 130px;
+                font-size: $menu--font--size--deskopt;
             }
         }
     }

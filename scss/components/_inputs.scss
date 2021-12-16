@@ -1,0 +1,45 @@
+main {
+    input {
+        display: none;
+    }
+
+    .check--home:checked {
+        & ~ .container2d .sections {
+            transform: translateX(0);
+        }
+
+        & ~ .menu .menu__option--home {
+            color: $white;
+        }
+    }
+
+    .check--about:checked {
+        & ~ .container2d .sections {
+            transform: translateX(-25%);
+        }
+
+        & ~ .menu .menu__option--about {
+            color: $white;
+        }
+    }
+
+    .check--skills:checked {
+        & ~ .container2d .sections {
+            transform: translateX(-50%);
+        }
+
+        & ~ .menu .menu__option--skills {
+            color: $white;
+        }
+    }
+
+    .check--contact:checked {
+        & ~ .container2d .sections {
+            transform: translateX(-75%);
+        }
+
+        & ~ .menu .menu__option--contact {
+            color: $white;
+        }
+    }
+}
