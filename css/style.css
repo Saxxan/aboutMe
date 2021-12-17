@@ -50,6 +50,7 @@ main .check--contact:checked ~ .menu .menu__option--contact {
 
 header {
   height: 15%;
+  border: dashed white 1px;
 }
 
 main {
@@ -58,6 +59,7 @@ main {
 }
 main .container2d {
   height: 80%;
+  border: dashed white 1px;
 }
 main .container2d .sections {
   height: 68%;
@@ -118,6 +120,7 @@ main .container2d .sections .contact {
       -ms-flex-align: center;
           align-items: center;
   gap: 30px;
+  border: dashed white 1px;
 }
 .menu li {
   display: -webkit-box;
