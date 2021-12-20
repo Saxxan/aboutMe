@@ -9,7 +9,7 @@ main {
         }
 
         & ~ .menu .menu__option--home {
-            color: $white;
+            opacity: 1;
         }
     }
 
@@ -19,7 +19,7 @@ main {
         }
 
         & ~ .menu .menu__option--about {
-            color: $white;
+            opacity: 1;
         }
     }
 
@@ -29,7 +29,7 @@ main {
         }
 
         & ~ .menu .menu__option--skills {
-            color: $white;
+            opacity: 1;
         }
     }
 
@@ -39,7 +39,7 @@ main {
         }
 
         & ~ .menu .menu__option--contact {
-            color: $white;
+            opacity: 1;
         }
     }
 }

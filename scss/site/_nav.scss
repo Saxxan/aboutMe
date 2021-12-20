@@ -4,7 +4,6 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-    border: dashed $white 1px;
 
     li {
         display: flex;
@@ -14,7 +13,7 @@
         width: 80px;
         height: 60px;
         font-size: $menu--font--size--mobile;
-        color: $grey;
+        opacity: .5;
 
         img {
             padding: $padding;

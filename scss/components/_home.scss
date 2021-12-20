@@ -1,0 +1,42 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    img {
+        width: 120px;
+        height: 220px;
+    }
+
+    div {
+        padding: $space;
+
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .home--superior__text {
+            align-items: left;
+
+            & h1:nth-child(n) {
+                text-shadow:
+                    0 0 4px #fff,
+                    0 0 11px #fff,
+                    0 0 40px $orange,
+                    0 0 80px $orange;
+                animation: flicker 4s cubic-bezier(.21,1.01,1,.9) 1;
+
+                & span {
+                    animation: flicker 5s cubic-bezier(.21,1.01,1,.9) infinite;
+                }
+            }
+        }
+
+        .home--inferior__text {
+            text-align: right;
+        }
+    }
+}
+
