@@ -4,14 +4,13 @@
     box-sizing: border-box;
 }
 
-html {
+html, body {
     height: 100vh;
+}
 
-    & body {
-        height: 100vh;
-        background-color: $black;
-        color: $white;
-        font-family: $body--font--family;
-        overflow: hidden;
-    }
+body {
+    background-color: $black;
+    color: $white;
+    font-family: $body--font--family;
+    overflow: hidden;
 }
