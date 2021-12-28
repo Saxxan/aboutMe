@@ -8,7 +8,7 @@ main {
             transform: translateX(0);
         }
 
-        & ~ .menu .menu__option--home {
+        & ~ .menu li:nth-child(1) {
             opacity: 1;
         }
     }
@@ -18,7 +18,7 @@ main {
             transform: translateX(-25%);
         }
 
-        & ~ .menu .menu__option--about {
+        & ~ .menu li:nth-child(2)  {
             opacity: 1;
         }
     }
@@ -28,7 +28,7 @@ main {
             transform: translateX(-50%);
         }
 
-        & ~ .menu .menu__option--skills {
+        & ~ .menu li:nth-child(3)  {
             opacity: 1;
         }
     }
@@ -38,7 +38,7 @@ main {
             transform: translateX(-75%);
         }
 
-        & ~ .menu .menu__option--contact {
+        & ~ .menu li:nth-child(4) {
             opacity: 1;
         }
     }
