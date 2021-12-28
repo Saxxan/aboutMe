@@ -1,45 +1,44 @@
-main {
-    input {
-        display: none;
+input {
+    display: none;
+}
+
+.check--home:checked {
+    & ~ .container2d .container2d__sections{
+        transform: translateX(0);
     }
 
-    .check--home:checked {
-        & ~ .container2d .sections {
-            transform: translateX(0);
-        }
-
-        & ~ .menu li:nth-child(1) {
-            opacity: 1;
-        }
-    }
-
-    .check--about:checked {
-        & ~ .container2d .sections {
-            transform: translateX(-25%);
-        }
-
-        & ~ .menu li:nth-child(2)  {
-            opacity: 1;
-        }
-    }
-
-    .check--skills:checked {
-        & ~ .container2d .sections {
-            transform: translateX(-50%);
-        }
-
-        & ~ .menu li:nth-child(3)  {
-            opacity: 1;
-        }
-    }
-
-    .check--contact:checked {
-        & ~ .container2d .sections {
-            transform: translateX(-75%);
-        }
-
-        & ~ .menu li:nth-child(4) {
-            opacity: 1;
-        }
+    & ~ .menu li:nth-child(1) {
+        opacity: 1;
     }
 }
+
+.check--about:checked {
+    & ~ .container2d .container2d__sections{
+        transform: translateX(-25%);
+    }
+
+    & ~ .menu li:nth-child(2)  {
+        opacity: 1;
+    }
+}
+
+.check--skills:checked {
+    & ~ .container2d .container2d__sections{
+        transform: translateX(-50%);
+    }
+
+    & ~ .menu li:nth-child(3)  {
+        opacity: 1;
+    }
+}
+
+.check--contact:checked {
+    & ~ .container2d .container2d__sections{
+        transform: translateX(-75%);
+    }
+
+    & ~ .menu li:nth-child(4) {
+        opacity: 1;
+    }
+}
+

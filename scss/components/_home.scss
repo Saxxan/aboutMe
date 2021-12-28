@@ -1,25 +1,18 @@
-.home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.container2d__sections__home {
     gap: 20px;
 
     img {
-        width: 120px;
-        height: 220px;
+        width: 110px;
+        height: 240px;
     }
 
-    div {
+    section {
         padding: $space;
+    }
 
-        div {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .home--superior__text {
-            align-items: left;
-
+    &--top {
+        &__text {
+            height: 130px;
             & h1:nth-child(n) {
                 text-shadow:
                     0 0 4px #fff,
@@ -33,9 +26,11 @@
                 }
             }
         }
+    }
 
-        .home--inferior__text {
-            text-align: right;
+    &--bottom {
+        &__text {
+            height: 130px;
         }
     }
 }

@@ -1,45 +1,28 @@
-main {
-    height: 85%;
-    margin: auto;
+.container2d {
+    height: 80%;
 
-    .container2d {
-        height: 80%;
+    &__sections {
+        height: 68%;
+        width: 400%;
+        position: absolute;
+        transition: transform .5s ease-in-out;
 
-        .sections {
-            height: 68%;
-            width: 400%;
-            position: absolute;
-            display: flex;
-            transition: transform .5s ease-in-out;
-
-            .section {
-                width: 25%;
-                height: 100%;
-                position: absolute;   
-            }
-
-            .home {
-                display: flex;
-                flex-direction: column;
-
-                & div {
-                    display: flex;
-                    justify-content: center;
-                }
-            }
-
-            .about {
-                transform: translateX(100%);
-            }
-
-            .skills {
-                transform: translateX(200%);
-            }
-
-            .contact {
-
-                transform: translateX(300%);
-            }
+        &__section {
+            width: 25%;
+            height: 100%;
+            position: absolute;   
         }
-    }   
-}
+
+        &__about {
+            transform: translateX(100%);
+        }
+
+        &__skills {
+            transform: translateX(200%);
+        }
+
+        &__contact {
+            transform: translateX(300%);
+        }
+    }
+}   
