@@ -59,28 +59,28 @@ main .check--home:checked ~ .container2d .sections {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
-main .check--home:checked ~ .menu .menu__option--home {
+main .check--home:checked ~ .menu li:nth-child(1) {
   opacity: 1;
 }
 main .check--about:checked ~ .container2d .sections {
   -webkit-transform: translateX(-25%);
           transform: translateX(-25%);
 }
-main .check--about:checked ~ .menu .menu__option--about {
+main .check--about:checked ~ .menu li:nth-child(2) {
   opacity: 1;
 }
 main .check--skills:checked ~ .container2d .sections {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-main .check--skills:checked ~ .menu .menu__option--skills {
+main .check--skills:checked ~ .menu li:nth-child(3) {
   opacity: 1;
 }
 main .check--contact:checked ~ .container2d .sections {
   -webkit-transform: translateX(-75%);
           transform: translateX(-75%);
 }
-main .check--contact:checked ~ .menu .menu__option--contact {
+main .check--contact:checked ~ .menu li:nth-child(4) {
   opacity: 1;
 }
 
@@ -191,48 +191,31 @@ main .container2d .sections .contact {
 
 .menu {
   height: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 30px;
+  gap: 25px;
+  margin: auto;
 }
-.menu li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.menu__option {
   width: 80px;
   height: 60px;
   font-size: 13px;
   opacity: 0.5;
 }
-.menu li img {
+.menu__option__icon {
   padding: 8px;
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
 }
 @media screen and (min-width: 1024px) {
-  .menu .menu {
+  .menu {
     max-width: 650px;
   }
-  .menu .menu li {
-    width: 130px;
+  .menu__option {
+    width: 150px;
     font-size: 15px;
+  }
+  .menu__option__icon {
+    width: 48px;
+    height: 48px;
   }
 }
 
