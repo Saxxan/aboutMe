@@ -3,6 +3,10 @@ h1 {
     font-family: 'Archivo Black', sans-serif;
     font-weight: 400;
     letter-spacing: $letter--space;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 50px;
+    }
 }
 
 h2 {
@@ -11,6 +15,10 @@ h2 {
     font-weight: 400;
     letter-spacing: $letter--space;
     padding: $padding;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 35px;
+    }
 }
 
 @keyframes flicker {

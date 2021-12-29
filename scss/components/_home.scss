@@ -1,18 +1,25 @@
 .container2d__sections__home {
-    gap: 20px;
 
-    img {
+    &__img {
         width: 110px;
         height: 240px;
     }
 
-    section {
-        padding: $space;
-    }
-
     &--top {
+        gap: 30px;
+
+        .top--img {
+            border-right: 2px $white solid;
+            background-image: url("../img/imgizquierda2.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: top right;
+        }
+
         &__text {
             height: 130px;
+            padding: $padding;
+
             & h1:nth-child(n) {
                 text-shadow:
                     0 0 4px #fff,
@@ -29,8 +36,36 @@
     }
 
     &--bottom {
+        gap: 15px;
+
         &__text {
             height: 130px;
+            padding: $padding;
+        }
+
+        .bottom--img {
+            border-left: 2px $white solid;
+            background-image: url("../img/imgderecha2.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: top left;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        &--top, &--bottom {
+            width: 850px;
+            gap: 75px;
+        }
+
+        &--bottom {
+            justify-content: right;
+        }
+
+        &__img {
+            width: 140px;
+            height: 270px;
         }
     }
 }
