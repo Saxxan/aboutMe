@@ -1,5 +1,7 @@
 @import "lib/variables";
 @import "lib/mixins";
+@import "utilities/flex";
+@import "utilities/helpers";
 @import "site/site";
 @import "lib/typography";
 @import "components/inputs";
@@ -7,5 +9,3 @@
 @import "site/main";
 @import "components/home";
 @import "site/nav";
-@import "utilities/flex";
-@import "utilities/helpers";
