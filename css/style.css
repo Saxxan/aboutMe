@@ -50,6 +50,10 @@
   text-align: right;
 }
 
+.border-left {
+  border-left: 2px solid white;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -95,6 +99,15 @@ h2 {
 @media screen and (min-width: 1024px) {
   h2 {
     font-size: 35px;
+  }
+}
+
+p {
+  font-size: 20px;
+}
+@media screen and (min-width: 1024px) {
+  p {
+    font-size: 25px;
   }
 }
 
@@ -224,7 +237,6 @@ header {
   padding: 8px;
 }
 .container2d__sections__home--bottom .bottom--img {
-  border-left: 2px white solid;
   background-image: url("../img/imgderecha2.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -243,6 +255,19 @@ header {
   .container2d__sections__home__img {
     width: 140px;
     height: 270px;
+  }
+}
+
+.container2d__sections__about__text {
+  padding: 20px;
+  margin: 0 20px 20px;
+}
+.container2d__sections__about__text p {
+  padding: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .container2d__sections__about__text {
+    width: 650px;
   }
 }
 
