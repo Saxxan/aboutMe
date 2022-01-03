@@ -1,0 +1,37 @@
+// -------$SKILLS
+.container2d__sections__skills {
+    &__text {
+        width: 220px;
+        padding: 5px;
+        margin: 0 20px 20px;
+
+        &__title {
+            padding: 10px;
+            font-family: $sec--title--font--family;
+            font-size: 25px;
+        }
+
+        &__list {
+            margin-left: 30px;
+            font-size: $body--font--size--mobile;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        gap: 40px;
+
+        &__text {
+            width: 300px;
+            height: 300px;
+            align-items: center;
+
+            &__title {
+                font-size: 30px;
+            }
+
+            &__list {
+                font-size: $body--font--size--deskopt;
+            }
+        }
+    }
+}

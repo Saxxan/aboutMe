@@ -42,6 +42,11 @@
           align-items: right;
 }
 
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .opacity-full {
   opacity: 1;
 }
@@ -268,6 +273,39 @@ header {
 @media screen and (min-width: 1024px) {
   .container2d__sections__about__text {
     width: 650px;
+  }
+}
+
+.container2d__sections__skills__text {
+  width: 220px;
+  padding: 5px;
+  margin: 0 20px 20px;
+}
+.container2d__sections__skills__text__title {
+  padding: 10px;
+  font-family: "Archivo", sans-serif;
+  font-size: 25px;
+}
+.container2d__sections__skills__text__list {
+  margin-left: 30px;
+  font-size: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .container2d__sections__skills {
+    gap: 40px;
+  }
+  .container2d__sections__skills__text {
+    width: 300px;
+    height: 300px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container2d__sections__skills__text__title {
+    font-size: 30px;
+  }
+  .container2d__sections__skills__text__list {
+    font-size: 25px;
   }
 }
 

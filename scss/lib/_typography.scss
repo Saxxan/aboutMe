@@ -1,7 +1,7 @@
 // -------$TYPOGRAPHY
 h1 {
     font-size: 30px;
-    font-family: 'Archivo Black', sans-serif;
+    font-family: $main--title--font--family;
     font-weight: 400;
     letter-spacing: $letter--space;
 
@@ -12,7 +12,7 @@ h1 {
 
 h2 {
     font-size: 20px;
-    font-family: 'Archivo', sans-serif;
+    font-family: $sec--title--font--family;
     font-weight: 400;
     letter-spacing: $letter--space;
     padding: $padding;
@@ -23,10 +23,10 @@ h2 {
 }
 
 p {
-    font-size: 20px;
+    font-size: $body--font--size--mobile;
 
     @media screen and (min-width: 1024px) {
-        font-size: 25px;
+        font-size: $body--font--size--deskopt;
     }
 }
 
