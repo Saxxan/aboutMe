@@ -137,7 +137,7 @@ p {
     opacity: 0;
   }
 }
-input {
+input[type=radio] {
   display: none;
 }
 
@@ -267,7 +267,7 @@ header {
   padding: 20px;
   margin: 0 20px 20px;
 }
-.container2d__sections__about__text p {
+.container2d__sections__about__text__p {
   padding: 10px;
 }
 @media screen and (min-width: 1024px) {
@@ -307,6 +307,30 @@ header {
   .container2d__sections__skills__text__list {
     font-size: 25px;
   }
+}
+
+.container2d__sections__contact__links {
+  padding: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+}
+.container2d__sections__contact__links__link {
+  width: 110px;
+  color: white;
+  text-decoration: none;
+  gap: 10px;
+  cursor: pointer;
+}
+.container2d__sections__contact__links__icon {
+  width: 40px;
+  height: 40px;
+}
+.container2d__sections__contact__form {
+  margin: 0 auto;
+  padding: 10px;
 }
 
 .menu {

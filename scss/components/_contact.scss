@@ -1,0 +1,31 @@
+// ------$CONTACT
+.container2d__sections__contact {
+
+    &__links {
+        // width: 300px;
+        // height: 70px;
+        padding: 10px;
+        flex-direction: row;
+        gap: 20px;
+
+        &__link {
+            width: 110px;
+            color: $white;
+            text-decoration: none;
+            gap: 10px;
+            cursor: pointer;
+        }
+
+        &__icon {
+            width: $icon-dimension-mobile;
+            height: $icon-dimension-mobile;
+        }
+    }
+
+    &__form {
+        // width: 300px;
+        // height: 375px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+}
