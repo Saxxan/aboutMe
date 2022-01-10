@@ -10,7 +10,7 @@ h1 {
     }
 }
 
-h2 {
+h2, h3 {
     font-size: 20px;
     font-family: $sec--title--font--family;
     font-weight: 400;
@@ -21,6 +21,7 @@ h2 {
         font-size: 35px;
     }
 }
+
 
 p {
     font-size: $body--font--size--mobile;
