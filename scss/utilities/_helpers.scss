@@ -9,3 +9,7 @@
 .border-left {
     border-left: 2px solid $white;
 }
+
+@mixin padding($value) {
+    padding: $value;
+}
