@@ -180,10 +180,15 @@ input[type=radio] {
 }
 
 input[type=text] {
-  height: 50px;
+  height: 40px;
   padding: 10px;
   margin: 0 0 10px;
   border-radius: 7px;
+}
+@media screen and (min-width: 1024px) {
+  input[type=text] {
+    height: 50px;
+  }
 }
 
 input[type=submit] {
@@ -344,7 +349,7 @@ header {
 .container2d__sections__contact__links {
   height: 80px;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -417,6 +422,9 @@ header {
     width: 450px;
     height: 100%;
     margin: 0;
+  }
+  .container2d__sections__contact__form .input--message {
+    height: 150px;
   }
 }
 
