@@ -2,30 +2,74 @@
 .container2d__sections__contact {
 
     &__links {
-        // width: 300px;
-        // height: 70px;
+        height: 80px;
         padding: 10px;
+        margin-bottom: 20px;
         flex-direction: row;
-        gap: 20px;
 
         &__link {
-            width: 110px;
+            width: 125px;
             color: $white;
             text-decoration: none;
-            gap: 10px;
             cursor: pointer;
-        }
+            flex-direction: column;
+            justify-content: center;
 
-        &__icon {
-            width: $icon-dimension-mobile;
-            height: $icon-dimension-mobile;
+            &__icon {
+                width: $icon-dimension-mobile;
+                height: $icon-dimension-mobile;
+                margin-bottom: 10px;
+            }
         }
     }
 
     &__form {
-        // width: 300px;
-        // height: 375px;
+        width: 90vw;
+        height: auto;
         margin: 0 auto;
         padding: 10px;
+
+        &__title {
+            font-size: 30px;
+            // ver si este mixin es útil para factorizar
+            @include padding(15px);
+            margin: 0 auto;
+        }
+
+        .input--message {
+            height: 120px;
+            margin-bottom: 20px;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        gap: 50px;
+
+        &__links {
+            width: 300px;
+            height: 100%;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 40px;
+
+            &__link {
+                flex-direction: row;
+                justify-content: flex-start;
+
+                &__icon {
+                    width: $icon-dimension-deskopt;
+                    height: $icon-dimension-deskopt;
+                    margin-right: 20px;
+                }
+            }
+        }
+
+        &__form {
+            width: 450px;
+            height: 100%;
+            margin: 0;
+
+        }
     }
 }
