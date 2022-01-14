@@ -2,21 +2,23 @@
 .container2d__sections__home {
     
     overflow: hidden;
+    gap: 10px;
 
     &__img {
-        width: 110px;
-        height: 240px;
+        width: 100px;
+        height: 200px;
+        overflow: hidden;
     }
 
     &--top {
-        gap: 30px;
+        gap: 20px;
 
         .top--img {
             border-right: 2px $white solid;
             background-image: url("../img/imgizquierda2.png");
             background-repeat: no-repeat;
             background-size: contain;
-            background-position: top right;
+            background-position: bottom right;
         }
 
         &__text {
@@ -39,7 +41,7 @@
     }
 
     &--bottom {
-        gap: 15px;
+        gap: 5px;
 
         &__text {
             height: 130px;
@@ -50,7 +52,7 @@
             background-image: url("../img/imgderecha2.png");
             background-repeat: no-repeat;
             background-size: contain;
-            background-position: top left;
+            background-position: bottom left;
         }
     }
 

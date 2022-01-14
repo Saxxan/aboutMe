@@ -1,9 +1,9 @@
 // ------$SECTIONS
 .container2d {
-    height: 80%;
+    height: 85%;
 
     &__sections {
-        height: 68%;
+        height: 77%;
         width: 400%;
         position: absolute;
         transition: transform .5s ease-in-out;
@@ -11,7 +11,8 @@
         &__section {
             width: 25%;
             height: 100%;
-            position: absolute;   
+            position: absolute;  
+            overflow: hidden; 
         }
 
         &__about {
