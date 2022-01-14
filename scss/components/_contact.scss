@@ -4,7 +4,7 @@
     &__links {
         height: 80px;
         padding: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         flex-direction: row;
 
         &__link {
@@ -70,6 +70,9 @@
             height: 100%;
             margin: 0;
 
+            .input--message {
+                height: 150px;
+            }
         }
     }
 }
