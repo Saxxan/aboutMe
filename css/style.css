@@ -239,6 +239,9 @@ header {
           transform: translateX(300%);
 }
 
+.container2d__sections__home {
+  overflow: hidden;
+}
 .container2d__sections__home__img {
   width: 110px;
   height: 240px;
