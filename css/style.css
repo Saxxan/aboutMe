@@ -30,6 +30,12 @@
           justify-content: flex-start;
 }
 
+.justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .align-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -147,35 +153,56 @@ input[type=radio] {
   display: none;
 }
 
-.check--home:checked ~ .container2d .container2d__sections {
+.check--home:checked ~ main .container2d .container2d__sections {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
-.check--home:checked ~ .menu li:nth-child(1) {
+.check--home:checked ~ main .menu li:nth-child(1) {
+  opacity: 1;
+}
+.check--home:checked ~ header .first--cell {
   opacity: 1;
 }
 
-.check--about:checked ~ .container2d .container2d__sections {
+.check--about:checked ~ main .container2d .container2d__sections {
   -webkit-transform: translateX(-25%);
           transform: translateX(-25%);
 }
-.check--about:checked ~ .menu li:nth-child(2) {
+.check--about:checked ~ main .menu li:nth-child(2) {
+  opacity: 1;
+}
+.check--about:checked ~ header .battery--charge__loader__line {
+  width: 33%;
+}
+.check--about:checked ~ header .second--cell {
   opacity: 1;
 }
 
-.check--skills:checked ~ .container2d .container2d__sections {
+.check--skills:checked ~ main .container2d .container2d__sections {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-.check--skills:checked ~ .menu li:nth-child(3) {
+.check--skills:checked ~ main .menu li:nth-child(3) {
+  opacity: 1;
+}
+.check--skills:checked ~ header .battery--charge__loader__line {
+  width: 66%;
+}
+.check--skills:checked ~ header .third--cell {
   opacity: 1;
 }
 
-.check--contact:checked ~ .container2d .container2d__sections {
+.check--contact:checked ~ main .container2d .container2d__sections {
   -webkit-transform: translateX(-75%);
           transform: translateX(-75%);
 }
-.check--contact:checked ~ .menu li:nth-child(4) {
+.check--contact:checked ~ main .menu li:nth-child(4) {
+  opacity: 1;
+}
+.check--contact:checked ~ header .battery--charge__loader__line {
+  width: 99%;
+}
+.check--contact:checked ~ header .fourth--cell {
   opacity: 1;
 }
 
@@ -216,20 +243,43 @@ header {
 
 .battery--charge {
   height: 100%;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
 }
 .battery--charge__loader {
-  width: 25%;
-  height: 5px;
+  width: 80%;
+  margin: 0 auto;
+  position: absolute;
+  z-index: -1;
+}
+.battery--charge__loader__line {
+  width: 3px;
+  height: 3px;
   border-radius: 2px;
-  background-color: #FDC23E;
-  position: relative;
-  top: 50%;
+  background-color: white;
+  position: absolute;
+  top: 5%;
+  -webkit-box-shadow: 0 0 4px white, 0 0 11px #FDC23E, 0 0 40px #FDC23E, 0 0 80px #FDC23E;
+          box-shadow: 0 0 4px white, 0 0 11px #FDC23E, 0 0 40px #FDC23E, 0 0 80px #FDC23E;
+  -webkit-transition: width 2s linear;
+  transition: width 2s linear;
 }
 .battery--charge__steps {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border: solid white 2px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 4px white, 0 0 11px #FDC23E;
+          box-shadow: 0 0 4px white, 0 0 11px #FDC23E;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s 1s;
+  transition: opacity 0.2s 1s;
+}
+.battery--charge__steps__step {
   width: 40px;
   height: 40px;
-  position: absolute;
+  margin: auto auto;
 }
 
 .container2d {

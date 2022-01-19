@@ -11,26 +11,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Archivo+Black&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Inputs -->
+    <input type="radio" name="nav" id="home--checkbox" class="check--home" checked>
+    <input type="radio" name="nav" id="about--checkbox" class="check--about">
+    <input type="radio" name="nav" id="skill--checkbox" class="check--skills">
+    <input type="radio" name="nav" id="contact--checkbox" class="check--contact">
     
     <!-- Header -->
     <header>
-        <section class="battery--charge">
-            <div class="battery--charge__loader"></div>
-            <img src="/iconos/battery-level-one.svg" alt="" class="battery--charge__steps">
-            <!-- <img src="/iconos/battery-level-two.svg" alt="" class="battery--charge__steps">
-            <img src="/iconos/battery-level-three.svg" alt="" class="battery--charge__steps">
-            <img src="/iconos/battery-level-four.svg" alt="" class="battery--charge__steps"> -->
+        <section class="battery--charge flex flex-row justify-between align-center">
+            <!-- Line -->
+            <div class="battery--charge__loader">
+                <div class="battery--charge__loader__line"></div>
+            </div>
+            <!-- Battery cells -->
+            <div class="battery--charge__steps first--cell flex">
+                <img src="iconos/battery-level-one.svg" alt="" class="battery--charge__steps__step">
+            </div>
+            <div class="battery--charge__steps second--cell flex">
+                <img src="iconos/battery-level-two.svg" alt="" class="battery--charge__steps__step">
+            </div>
+            <div class="battery--charge__steps third--cell flex">
+                <img src="iconos/battery-level-three.svg" alt="" class="battery--charge__steps__step">
+            </div>
+            <div class="battery--charge__steps fourth--cell flex">
+                <img src="iconos/battery-level-four.svg" alt="" class="battery--charge__steps__step">
+            </div>   
         </section>
     </header>
 
     <main>
-
-        <!-- Inputs -->
-        <input type="radio" name="nav" id="home--checkbox" class="check--home" checked>
-        <input type="radio" name="nav" id="about--checkbox" class="check--about">
-        <input type="radio" name="nav" id="skill--checkbox" class="check--skills">
-        <input type="radio" name="nav" id="contact--checkbox" class="check--contact">
-
         <!-- Sections -->
         <div class="container2d">
             <section class="container2d__sections flex">

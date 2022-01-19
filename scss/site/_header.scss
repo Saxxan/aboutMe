@@ -4,28 +4,49 @@ header {
 
 .battery--charge {
     height: 100%;
-    width: 100%;
+    width: 80%;
+    margin:0 auto;
 
     &__loader {
-        width: 25%;
-        height: 5px;
-        border-radius: 2px;
-        background-color: $orange;
-        position: relative;
-        // left: 25%;
-        top: 50%;
+        width: 80%;
+        margin: 0 auto;
+        position: absolute;
+        z-index: -1;
+
+        &__line {
+            width: 3px;
+            height: 3px;
+            border-radius: 2px;
+            background-color: $white;
+            position: absolute;
+            top: 5%;
+            box-shadow: 
+            0 0 4px $white,
+            0 0 11px $orange,
+            0 0 40px $orange,
+            0 0 80px $orange;
+
+            transition: width 2s linear;
+        }
     }
 
     &__steps {
-        width: $icon-dimension-mobile;
-        height: $icon-dimension-mobile;
+        width: 50px;
+        height: 50px;
+        background-color: $black;
+        border: solid $white 2px;
+        border-radius: 50%;
+        box-shadow: 
+        0 0 4px $white,
+        0 0 11px $orange;  
+        opacity: 0;
 
-        position: absolute;
+        transition: opacity .2s 1s;
 
-        // @for $i from 1 through 4 {
-        //     &:nth-child($i) {
-        //         left: 
-        //     }
-        // }
+        &__step {
+            width: $icon-dimension-mobile;
+            height: $icon-dimension-mobile;
+            margin: auto auto;
+        }
     }
 }
