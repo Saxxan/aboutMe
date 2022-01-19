@@ -214,6 +214,24 @@ header {
   height: 10%;
 }
 
+.battery--charge {
+  height: 100%;
+  width: 100%;
+}
+.battery--charge__loader {
+  width: 25%;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #FDC23E;
+  position: relative;
+  top: 50%;
+}
+.battery--charge__steps {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+
 .container2d {
   height: 85%;
 }
