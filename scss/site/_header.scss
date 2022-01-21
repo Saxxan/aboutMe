@@ -2,24 +2,21 @@ header {
     height: 10%;
 }
 
-.battery--charge {
+.circuit{
     height: 100%;
-    width: 80%;
+    width: 100%;
     margin:0 auto;
 
     &__loader {
-        width: 80%;
-        margin: 0 auto;
-        position: absolute;
+        width: 100%;
+        @include absoluteDimensions(8.8%, 8%);
         z-index: -1;
 
         &__line {
-            width: 3px;
-            height: 3px;
+            width: 12%;
+            height: 2px;
             border-radius: 2px;
             background-color: $white;
-            position: absolute;
-            top: 5%;
             box-shadow: 
             0 0 4px $white,
             0 0 11px $orange,
@@ -30,23 +27,64 @@ header {
         }
     }
 
-    &__steps {
-        width: 50px;
-        height: 50px;
-        background-color: $black;
-        border: solid $white 2px;
-        border-radius: 50%;
-        box-shadow: 
-        0 0 4px $white,
-        0 0 11px $orange;  
+    &__solar--panel {
+        width: auto;
+        height: 10%;
+        @include absoluteDimensions(0,0);
+    }
+
+    p[class^="circuit__title"] {
+        font-size: 10px;
+        color: $grey;
+        transition: all 1s linear 2s;
+    }
+
+    &__title {
+        &--home {
+            @include absoluteDimensions(4%, calc(20% - 3%));
+        }
+
+        &--about {
+            @include absoluteDimensions(4%, calc(40% - 3%));
+        }
+
+        &--skills {
+            @include absoluteDimensions(4%, calc(60% - 3%));
+        }
+
+        &--contact {
+            @include absoluteDimensions(4%, calc(80% - 3%));
+        }
+    }
+
+    img[class^="circuit__switch"] {
+        width: auto;
+        height: 3%;
+        opacity: 0;
+    }
+
+    img[class^="circuit__switch--home"] {
+        @include absoluteDimensions(6.5%, calc(20% - 1.5%));
+    }
+
+    img[class^="circuit__switch--about"] {
+        @include absoluteDimensions(6.5%, calc(40% - 1.5%));
+    }
+
+    img[class^="circuit__switch--skills"] {
+        @include absoluteDimensions(6.5%, calc(60% - 1.5%));
+    }
+
+    // img[class^="circuit__switch--contact"] {
+    //     @include absoluteDimensions(6.5%, calc(80% - 1.5%));
+    // }
+
+    img[class^="circuit__battery"] {
+        width: auto;
+        height: 6%;
+        @include absoluteDimensions(3.6%, 90%);
         opacity: 0;
 
-        transition: opacity .2s 1s;
-
-        &__step {
-            width: $icon-dimension-mobile;
-            height: $icon-dimension-mobile;
-            margin: auto auto;
-        }
+        transition: opacity .5s linear 2s;
     }
 }
