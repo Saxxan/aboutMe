@@ -11,18 +11,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Archivo+Black&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Inputs -->
+    <input type="radio" name="nav" id="home--checkbox" class="check--home" checked>
+    <input type="radio" name="nav" id="about--checkbox" class="check--about">
+    <input type="radio" name="nav" id="skill--checkbox" class="check--skills">
+    <input type="radio" name="nav" id="contact--checkbox" class="check--contact">
     
     <!-- Header -->
-    <header>HEADER</header>
+    <header>
+        <section class="circuit flex flex-row">
+            <!-- Solar pannel -->
+            <img src="iconos/solar-panel.svg" alt="" class="circuit__solar--panel">
+            <!-- Line -->
+            <div class="circuit__loader">
+                <div class="circuit__loader__line"></div>
+            </div>
+            <!-- Titles -->
+            <p class="circuit__title--home">HOME</p>
+            <p class="circuit__title--about">ABOUT</p>
+            <p class="circuit__title--skills">SKILLS</p>
+            <p class="circuit__title--contact">CONTACT</p>
+            <!-- Switch icons -->
+            <img src="iconos/switch position off page.svg" alt="" class="circuit__switch--home--next">
+            <img src="iconos/switch position on page.svg" alt="" class="circuit__switch--home">
+            <img src="iconos/switch position off page.svg" alt="" class="circuit__switch--about--next">
+            <img src="iconos/switch position on page.svg" alt="" class="circuit__switch--about">
+            <img src="iconos/switch position off page.svg" alt="" class="circuit__switch--skills--next">
+            <img src="iconos/switch position on page.svg" alt="" class="circuit__switch--skills">
+            <!-- <img src="iconos/switch off.svg" alt="" class="circuit__switch--contact--off">
+            <img src="iconos/switch on.svg" alt="" class="circuit__switch--contact--on"> -->
+            <!-- Battery icons -->
+            <img src="iconos/battery-level-one.svg" alt="" class="circuit__battery--one">
+            <img src="iconos/battery-level-two.svg" alt="" class="circuit__battery--two">
+            <img src="iconos/battery-level-three.svg" alt="" class="circuit__battery--three">
+            <img src="iconos/battery-level-four.svg" alt="" class="circuit__battery--four">
+              
+        </section>
+    </header>
 
     <main>
-
-        <!-- Inputs -->
-        <input type="radio" name="nav" id="home--checkbox" class="check--home" checked>
-        <input type="radio" name="nav" id="about--checkbox" class="check--about">
-        <input type="radio" name="nav" id="skill--checkbox" class="check--skills">
-        <input type="radio" name="nav" id="contact--checkbox" class="check--contact">
-
         <!-- Sections -->
         <div class="container2d">
             <section class="container2d__sections flex">

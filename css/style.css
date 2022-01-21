@@ -30,6 +30,12 @@
           justify-content: flex-start;
 }
 
+.justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .align-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -147,35 +153,99 @@ input[type=radio] {
   display: none;
 }
 
-.check--home:checked ~ .container2d .container2d__sections {
+.check--home:checked ~ main .container2d .container2d__sections {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
-.check--home:checked ~ .menu li:nth-child(1) {
+.check--home:checked ~ main .menu li:nth-child(1) {
+  opacity: 1;
+}
+.check--home:checked ~ header .circuit__switch--home {
+  opacity: 1;
+}
+.check--home:checked ~ header .circuit__title--home {
+  color: white;
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 18px #FDC23E, 0 0 25px #FDC23E;
+}
+.check--home:checked ~ header .circuit__battery--one {
   opacity: 1;
 }
 
-.check--about:checked ~ .container2d .container2d__sections {
+.check--about:checked ~ main .container2d .container2d__sections {
   -webkit-transform: translateX(-25%);
           transform: translateX(-25%);
 }
-.check--about:checked ~ .menu li:nth-child(2) {
+.check--about:checked ~ main .menu li:nth-child(2) {
+  opacity: 1;
+}
+.check--about:checked ~ header .circuit__loader__line {
+  width: 32%;
+}
+.check--about:checked ~ header .circuit__switch--about {
+  opacity: 1;
+}
+.check--about:checked ~ header .circuit__switch--home--next {
+  opacity: 1;
+}
+.check--about:checked ~ header .circuit__title--about {
+  color: white;
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 18px #FDC23E, 0 0 25px #FDC23E;
+}
+.check--about:checked ~ header .circuit__battery--two {
   opacity: 1;
 }
 
-.check--skills:checked ~ .container2d .container2d__sections {
+.check--skills:checked ~ main .container2d .container2d__sections {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-.check--skills:checked ~ .menu li:nth-child(3) {
+.check--skills:checked ~ main .menu li:nth-child(3) {
+  opacity: 1;
+}
+.check--skills:checked ~ header .circuit__loader__line {
+  width: 52%;
+}
+.check--skills:checked ~ header .circuit__switch--skills {
+  opacity: 1;
+}
+.check--skills:checked ~ header .circuit__switch--about--next {
+  opacity: 1;
+}
+.check--skills:checked ~ header .circuit__switch--home--next {
+  opacity: 1;
+}
+.check--skills:checked ~ header .circuit__title--skills {
+  color: white;
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 18px #FDC23E, 0 0 25px #FDC23E;
+}
+.check--skills:checked ~ header .circuit__battery--three {
   opacity: 1;
 }
 
-.check--contact:checked ~ .container2d .container2d__sections {
+.check--contact:checked ~ main .container2d .container2d__sections {
   -webkit-transform: translateX(-75%);
           transform: translateX(-75%);
 }
-.check--contact:checked ~ .menu li:nth-child(4) {
+.check--contact:checked ~ main .menu li:nth-child(4) {
+  opacity: 1;
+}
+.check--contact:checked ~ header .circuit__loader__line {
+  width: 90%;
+}
+.check--contact:checked ~ header .circuit__switch--skills--next {
+  opacity: 1;
+}
+.check--contact:checked ~ header .circuit__switch--about--next {
+  opacity: 1;
+}
+.check--contact:checked ~ header .circuit__switch--home--next {
+  opacity: 1;
+}
+.check--contact:checked ~ header .circuit__title--contact {
+  color: white;
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 18px #FDC23E, 0 0 25px #FDC23E;
+}
+.check--contact:checked ~ header .circuit__battery--four {
   opacity: 1;
 }
 
@@ -212,6 +282,92 @@ input[type=submit]:hover, input[type=submit]:focus {
 
 header {
   height: 10%;
+}
+
+.circuit {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+.circuit__loader {
+  width: 100%;
+  position: absolute;
+  top: 8.8%;
+  left: 8%;
+  z-index: -1;
+}
+.circuit__loader__line {
+  width: 12%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: white;
+  -webkit-box-shadow: 0 0 4px white, 0 0 11px #FDC23E, 0 0 40px #FDC23E, 0 0 80px #FDC23E;
+          box-shadow: 0 0 4px white, 0 0 11px #FDC23E, 0 0 40px #FDC23E, 0 0 80px #FDC23E;
+  -webkit-transition: width 2s linear;
+  transition: width 2s linear;
+}
+.circuit__solar--panel {
+  width: auto;
+  height: 10%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.circuit p[class^=circuit__title] {
+  font-size: 10px;
+  color: #9F9F9F;
+  -webkit-transition: all 1s linear 2s;
+  transition: all 1s linear 2s;
+}
+.circuit__title--home {
+  position: absolute;
+  top: 4%;
+  left: calc(20% - 3%);
+}
+.circuit__title--about {
+  position: absolute;
+  top: 4%;
+  left: calc(40% - 3%);
+}
+.circuit__title--skills {
+  position: absolute;
+  top: 4%;
+  left: calc(60% - 3%);
+}
+.circuit__title--contact {
+  position: absolute;
+  top: 4%;
+  left: calc(80% - 3%);
+}
+.circuit img[class^=circuit__switch] {
+  width: auto;
+  height: 3%;
+  opacity: 0;
+}
+.circuit img[class^=circuit__switch--home] {
+  position: absolute;
+  top: 6.5%;
+  left: calc(20% - 1.5%);
+}
+.circuit img[class^=circuit__switch--about] {
+  position: absolute;
+  top: 6.5%;
+  left: calc(40% - 1.5%);
+}
+.circuit img[class^=circuit__switch--skills] {
+  position: absolute;
+  top: 6.5%;
+  left: calc(60% - 1.5%);
+}
+.circuit img[class^=circuit__battery] {
+  width: auto;
+  height: 6%;
+  position: absolute;
+  top: 3.6%;
+  left: 90%;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear 2s;
+  transition: opacity 0.5s linear 2s;
 }
 
 .container2d {
@@ -362,7 +518,7 @@ header {
 .container2d__sections__contact__links {
   height: 80px;
   padding: 10px;
-  margin-bottom: 10px;
+  margin: 20px 0;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
