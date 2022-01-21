@@ -30,6 +30,12 @@
           justify-content: flex-start;
 }
 
+.justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .align-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -84,7 +90,7 @@ body {
 }
 
 main {
-  height: 85%;
+  height: 90%;
   margin: auto;
 }
 
@@ -147,35 +153,99 @@ input[type=radio] {
   display: none;
 }
 
-.check--home:checked ~ .container2d .container2d__sections {
+.check--home:checked ~ main .container2d .container2d__sections {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
-.check--home:checked ~ .menu li:nth-child(1) {
+.check--home:checked ~ main .menu li:nth-child(1) {
+  opacity: 1;
+}
+.check--home:checked ~ header .circuit__switch--home {
+  opacity: 1;
+}
+.check--home:checked ~ header .circuit__title--home {
+  color: white;
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 18px #FDC23E, 0 0 25px #FDC23E;
+}
+.check--home:checked ~ header .circuit__battery--one {
   opacity: 1;
 }
 
-.check--about:checked ~ .container2d .container2d__sections {
+.check--about:checked ~ main .container2d .container2d__sections {
   -webkit-transform: translateX(-25%);
           transform: translateX(-25%);
 }
-.check--about:checked ~ .menu li:nth-child(2) {
+.check--about:checked ~ main .menu li:nth-child(2) {
+  opacity: 1;
+}
+.check--about:checked ~ header .circuit__loader__line {
+  width: 32%;
+}
+.check--about:checked ~ header .circuit__switch--about {
+  opacity: 1;
+}
+.check--about:checked ~ header .circuit__switch--home--next {
+  opacity: 1;
+}
+.check--about:checked ~ header .circuit__title--about {
+  color: white;
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 18px #FDC23E, 0 0 25px #FDC23E;
+}
+.check--about:checked ~ header .circuit__battery--two {
   opacity: 1;
 }
 
-.check--skills:checked ~ .container2d .container2d__sections {
+.check--skills:checked ~ main .container2d .container2d__sections {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-.check--skills:checked ~ .menu li:nth-child(3) {
+.check--skills:checked ~ main .menu li:nth-child(3) {
+  opacity: 1;
+}
+.check--skills:checked ~ header .circuit__loader__line {
+  width: 52%;
+}
+.check--skills:checked ~ header .circuit__switch--skills {
+  opacity: 1;
+}
+.check--skills:checked ~ header .circuit__switch--about--next {
+  opacity: 1;
+}
+.check--skills:checked ~ header .circuit__switch--home--next {
+  opacity: 1;
+}
+.check--skills:checked ~ header .circuit__title--skills {
+  color: white;
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 18px #FDC23E, 0 0 25px #FDC23E;
+}
+.check--skills:checked ~ header .circuit__battery--three {
   opacity: 1;
 }
 
-.check--contact:checked ~ .container2d .container2d__sections {
+.check--contact:checked ~ main .container2d .container2d__sections {
   -webkit-transform: translateX(-75%);
           transform: translateX(-75%);
 }
-.check--contact:checked ~ .menu li:nth-child(4) {
+.check--contact:checked ~ main .menu li:nth-child(4) {
+  opacity: 1;
+}
+.check--contact:checked ~ header .circuit__loader__line {
+  width: 90%;
+}
+.check--contact:checked ~ header .circuit__switch--skills--next {
+  opacity: 1;
+}
+.check--contact:checked ~ header .circuit__switch--about--next {
+  opacity: 1;
+}
+.check--contact:checked ~ header .circuit__switch--home--next {
+  opacity: 1;
+}
+.check--contact:checked ~ header .circuit__title--contact {
+  color: white;
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 18px #FDC23E, 0 0 25px #FDC23E;
+}
+.check--contact:checked ~ header .circuit__battery--four {
   opacity: 1;
 }
 
@@ -211,14 +281,100 @@ input[type=submit]:hover, input[type=submit]:focus {
 }
 
 header {
-  height: 15%;
+  height: 10%;
+}
+
+.circuit {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+.circuit__loader {
+  width: 100%;
+  position: absolute;
+  top: 8.8%;
+  left: 8%;
+  z-index: -1;
+}
+.circuit__loader__line {
+  width: 12%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: white;
+  -webkit-box-shadow: 0 0 4px white, 0 0 11px #FDC23E, 0 0 40px #FDC23E, 0 0 80px #FDC23E;
+          box-shadow: 0 0 4px white, 0 0 11px #FDC23E, 0 0 40px #FDC23E, 0 0 80px #FDC23E;
+  -webkit-transition: width 2s linear;
+  transition: width 2s linear;
+}
+.circuit__solar--panel {
+  width: auto;
+  height: 10%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.circuit p[class^=circuit__title] {
+  font-size: 10px;
+  color: #9F9F9F;
+  -webkit-transition: all 1s linear 2s;
+  transition: all 1s linear 2s;
+}
+.circuit__title--home {
+  position: absolute;
+  top: 4%;
+  left: calc(20% - 3%);
+}
+.circuit__title--about {
+  position: absolute;
+  top: 4%;
+  left: calc(40% - 3%);
+}
+.circuit__title--skills {
+  position: absolute;
+  top: 4%;
+  left: calc(60% - 3%);
+}
+.circuit__title--contact {
+  position: absolute;
+  top: 4%;
+  left: calc(80% - 3%);
+}
+.circuit img[class^=circuit__switch] {
+  width: auto;
+  height: 3%;
+  opacity: 0;
+}
+.circuit img[class^=circuit__switch--home] {
+  position: absolute;
+  top: 6.5%;
+  left: calc(20% - 1.5%);
+}
+.circuit img[class^=circuit__switch--about] {
+  position: absolute;
+  top: 6.5%;
+  left: calc(40% - 1.5%);
+}
+.circuit img[class^=circuit__switch--skills] {
+  position: absolute;
+  top: 6.5%;
+  left: calc(60% - 1.5%);
+}
+.circuit img[class^=circuit__battery] {
+  width: auto;
+  height: 6%;
+  position: absolute;
+  top: 3.6%;
+  left: 90%;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear 2s;
+  transition: opacity 0.5s linear 2s;
 }
 
 .container2d {
-  height: 80%;
+  height: 85%;
 }
 .container2d__sections {
-  height: 68%;
+  height: 77%;
   width: 400%;
   position: absolute;
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
@@ -230,6 +386,7 @@ header {
   width: 25%;
   height: 100%;
   position: absolute;
+  overflow: hidden;
 }
 .container2d__sections__about {
   -webkit-transform: translateX(100%);
@@ -246,20 +403,22 @@ header {
 
 .container2d__sections__home {
   overflow: hidden;
+  gap: 10px;
 }
 .container2d__sections__home__img {
-  width: 110px;
-  height: 240px;
+  width: 100px;
+  height: 200px;
+  overflow: hidden;
 }
 .container2d__sections__home--top {
-  gap: 30px;
+  gap: 20px;
 }
 .container2d__sections__home--top .top--img {
   border-right: 2px white solid;
   background-image: url("../img/imgizquierda2.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: top right;
+  background-position: bottom right;
 }
 .container2d__sections__home--top__text {
   height: 130px;
@@ -275,7 +434,7 @@ header {
           animation: flicker 5s cubic-bezier(0.21, 1.01, 1, 0.9) infinite;
 }
 .container2d__sections__home--bottom {
-  gap: 15px;
+  gap: 5px;
 }
 .container2d__sections__home--bottom__text {
   height: 130px;
@@ -285,7 +444,7 @@ header {
   background-image: url("../img/imgderecha2.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: top left;
+  background-position: bottom left;
 }
 @media screen and (min-width: 1024px) {
   .container2d__sections__home--top, .container2d__sections__home--bottom {
@@ -304,11 +463,15 @@ header {
 }
 
 .container2d__sections__about__text {
-  padding: 20px;
-  margin: 0 20px 20px;
+  padding: 15px;
+  margin: 0 10px 10px;
+  text-align: center;
 }
 .container2d__sections__about__text__p {
   padding: 10px;
+}
+.container2d__sections__about__line {
+  width: 50%;
 }
 @media screen and (min-width: 1024px) {
   .container2d__sections__about__text {
@@ -317,18 +480,21 @@ header {
 }
 
 .container2d__sections__skills__text {
-  width: 220px;
+  width: 250px;
   padding: 5px;
-  margin: 0 20px 20px;
+  margin: 0 5px 5px;
+  text-align: center;
 }
 .container2d__sections__skills__text__title {
-  padding: 10px;
+  padding: 10px 10px 5px 10px;
   font-family: "Archivo", sans-serif;
   font-size: 25px;
+  border-bottom: 2px solid white;
 }
 .container2d__sections__skills__text__list {
-  margin-left: 30px;
   font-size: 20px;
+  list-style: none;
+  padding-top: 5px;
 }
 @media screen and (min-width: 1024px) {
   .container2d__sections__skills {
@@ -352,7 +518,7 @@ header {
 .container2d__sections__contact__links {
   height: 80px;
   padding: 10px;
-  margin-bottom: 10px;
+  margin: 20px 0;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -432,20 +598,23 @@ header {
 }
 
 .menu {
-  height: 20%;
+  height: 15%;
   gap: 25px;
   margin: auto;
 }
 .menu__option {
   width: 80px;
   height: 60px;
-  font-size: 13px;
   opacity: 0.5;
+  list-style: none;
 }
-.menu__option__icon {
+.menu__option__label__icon {
   padding: 8px;
   width: 40px;
   height: 40px;
+}
+.menu__option__label__title {
+  font-size: 13px;
 }
 @media screen and (min-width: 1024px) {
   .menu {
@@ -453,10 +622,12 @@ header {
   }
   .menu__option {
     width: 150px;
-    font-size: 15px;
   }
-  .menu__option__icon {
+  .menu__option__label__icon {
     width: 48px;
     height: 48px;
+  }
+  .menu__option__label__title {
+    font-size: 15px;
   }
 }

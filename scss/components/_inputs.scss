@@ -4,41 +4,145 @@ input[type="radio"] {
 }
 
 .check--home:checked {
-    & ~ .container2d .container2d__sections{
+    & ~ main .container2d .container2d__sections{
         transform: translateX(0);
     }
 
-    & ~ .menu li:nth-child(1) {
+    & ~ main .menu li:nth-child(1) {
+        opacity: 1;
+    }
+
+    & ~ header .circuit__switch--home {
+        opacity: 1;
+    }
+
+    & ~ header .circuit__title--home {
+        color: $white;
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 18px $orange,
+            0 0 25px $orange;
+    }
+
+    & ~ header .circuit__battery--one {
         opacity: 1;
     }
 }
 
 .check--about:checked {
-    & ~ .container2d .container2d__sections{
+    & ~ main .container2d .container2d__sections{
         transform: translateX(-25%);
     }
 
-    & ~ .menu li:nth-child(2)  {
+    & ~ main .menu li:nth-child(2)  {
+        opacity: 1;
+    }
+
+    & ~ header .circuit__loader__line {
+        width: 32%;
+    }
+
+    & ~ header .circuit__switch--about {
+        opacity: 1;
+    }
+
+    & ~ header .circuit__switch--home--next {
+        opacity: 1;
+    }
+
+    & ~ header .circuit__title--about {
+        color: $white;
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 18px $orange,
+            0 0 25px $orange;
+    }
+
+    & ~ header .circuit__battery--two {
         opacity: 1;
     }
 }
 
 .check--skills:checked {
-    & ~ .container2d .container2d__sections{
+    & ~ main .container2d .container2d__sections{
         transform: translateX(-50%);
     }
 
-    & ~ .menu li:nth-child(3)  {
+    & ~ main .menu li:nth-child(3)  {
+        opacity: 1;
+    }
+
+    & ~ header .circuit__loader__line {
+        width: 52%;
+    }
+
+    & ~ header .circuit__switch--skills {
+        opacity: 1;
+    }
+
+    & ~ header .circuit__switch--about--next {
+        opacity: 1;
+    }
+
+    & ~ header .circuit__switch--home--next {
+        opacity: 1;
+    }
+
+    & ~ header .circuit__title--skills {
+        color: $white;
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 18px $orange,
+            0 0 25px $orange;
+    }
+
+    & ~ header .circuit__battery--three {
         opacity: 1;
     }
 }
 
 .check--contact:checked {
-    & ~ .container2d .container2d__sections{
+    & ~ main .container2d .container2d__sections{
         transform: translateX(-75%);
     }
 
-    & ~ .menu li:nth-child(4) {
+    & ~ main .menu li:nth-child(4) {
+        opacity: 1;
+    }
+
+    & ~ header .circuit__loader__line {
+        width: 90%;
+    }
+
+    // & ~ header .circuit__switch--contact--on {
+    //     opacity: 1;
+    // }
+
+    & ~ header .circuit__switch--skills--next {
+        opacity: 1;
+    }
+
+    & ~ header .circuit__switch--about--next {
+        opacity: 1;
+    }
+
+    & ~ header .circuit__switch--home--next {
+        opacity: 1;
+    }
+
+    & ~ header .circuit__title--contact {
+        color: $white;
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 18px $orange,
+            0 0 25px $orange;
+    }
+
+    & ~ header .circuit__battery--four {
         opacity: 1;
     }
 }

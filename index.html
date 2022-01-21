@@ -11,18 +11,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Archivo+Black&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Inputs -->
+    <input type="radio" name="nav" id="home--checkbox" class="check--home" checked>
+    <input type="radio" name="nav" id="about--checkbox" class="check--about">
+    <input type="radio" name="nav" id="skill--checkbox" class="check--skills">
+    <input type="radio" name="nav" id="contact--checkbox" class="check--contact">
     
     <!-- Header -->
-    <header>HEADER</header>
+    <header>
+        <section class="circuit flex flex-row">
+            <!-- Solar pannel -->
+            <img src="iconos/solar-panel.svg" alt="" class="circuit__solar--panel">
+            <!-- Line -->
+            <div class="circuit__loader">
+                <div class="circuit__loader__line"></div>
+            </div>
+            <!-- Titles -->
+            <p class="circuit__title--home">HOME</p>
+            <p class="circuit__title--about">ABOUT</p>
+            <p class="circuit__title--skills">SKILLS</p>
+            <p class="circuit__title--contact">CONTACT</p>
+            <!-- Switch icons -->
+            <img src="iconos/switch position off page.svg" alt="" class="circuit__switch--home--next">
+            <img src="iconos/switch position on page.svg" alt="" class="circuit__switch--home">
+            <img src="iconos/switch position off page.svg" alt="" class="circuit__switch--about--next">
+            <img src="iconos/switch position on page.svg" alt="" class="circuit__switch--about">
+            <img src="iconos/switch position off page.svg" alt="" class="circuit__switch--skills--next">
+            <img src="iconos/switch position on page.svg" alt="" class="circuit__switch--skills">
+            <!-- <img src="iconos/switch off.svg" alt="" class="circuit__switch--contact--off">
+            <img src="iconos/switch on.svg" alt="" class="circuit__switch--contact--on"> -->
+            <!-- Battery icons -->
+            <img src="iconos/battery-level-one.svg" alt="" class="circuit__battery--one">
+            <img src="iconos/battery-level-two.svg" alt="" class="circuit__battery--two">
+            <img src="iconos/battery-level-three.svg" alt="" class="circuit__battery--three">
+            <img src="iconos/battery-level-four.svg" alt="" class="circuit__battery--four">
+              
+        </section>
+    </header>
 
     <main>
-
-        <!-- Inputs -->
-        <input type="radio" name="nav" id="home--checkbox" class="check--home" checked>
-        <input type="radio" name="nav" id="about--checkbox" class="check--about">
-        <input type="radio" name="nav" id="skill--checkbox" class="check--skills">
-        <input type="radio" name="nav" id="contact--checkbox" class="check--contact">
-
         <!-- Sections -->
         <div class="container2d">
             <section class="container2d__sections flex">
@@ -50,10 +78,11 @@
                 <!-- About section -->
                 <section class="container2d__sections__section container2d__sections__about flex flex-column justify-center align-center" id="about">
                     <section class="container2d__sections__about__text">
-                        <p class="container2d__sections__about__text__p border-left">Hi, I’m Salvador Puche Ibáñez industrial electronic engineer, web designer and Front-end developer.</p>
+                        <p class="container2d__sections__about__text__p">Hi, I’m Salvador Puche Ibáñez. A resume about me would be: Animal and travel lover. Overall, I have a sober taste. I am ceaslessly eager to assume design and fron-end challenges, though.</p>
                     </section>
+                    <hr class="container2d__sections__about__line">
                     <section class="container2d__sections__about__text">
-                        <p class="container2d__sections__about__text__p border-left">I work to help people and companies to create an accesible and innovative web site and get the users feel comfortable while navigating this sites.</p>
+                        <p class="container2d__sections__about__text__p">I work to help people and companies to create accesible and innovative web sites and get the users feel comfortable while navigating this sites.</p>
                     </section>
                 </section>
 
@@ -66,6 +95,7 @@
                             <li>Responsive CSS</li>
                             <li>JavaScript (Vue)</li>
                             <li>SEO</li>
+                            <li>Prepross</li>
                             <li>Linux</li>
                             <li>C and C++</li>
                             <li>Java</li>
@@ -78,7 +108,6 @@
                             <li>UX/UI</li>
                             <li>Iconography</li>
                             <li>SVG</li>
-                            <li>Animation</li>
                         </ul>
                     </section>
                 </section>
@@ -113,20 +142,28 @@
 
         <!-- MENU -->
         <ul class="menu flex justify-center align-center">
-            <li class="menu__option flex flex-column justify-center align-center">
-                <img class="menu__option__icon" src="iconos/home-icon.svg" alt="">
-                <label for="home--checkbox">HOME</label>
+            <li class="menu__option">
+                <label class="menu__option__label flex flex-column justify-center align-center" for="home--checkbox">
+                    <img class="menu__option__label__icon" src="iconos/home-icon.svg" alt="">
+                    <p class="menu__option__label__title">HOME</p>
+                </label>
             </li>
-            <li class="menu__option flex flex-column justify-center align-center">
-                <img class="menu__option__icon" src="iconos/about-icon.svg" alt="">
-                <label for="about--checkbox">ABOUT</label>  
+            <li class="menu__option">
+                <label class="menu__option__label flex flex-column justify-center align-center" for="about--checkbox">
+                    <img class="menu__option__label__icon" src="iconos/about-icon.svg" alt="">
+                    <p class="menu__option__label__title">ABOUT</p>
+                </label>  
             </li>
-            <li class="menu__option flex flex-column justify-center align-center">
-                <img class="menu__option__icon" src="iconos/skill-icon.svg" alt="">
-                <label for="skill--checkbox">SKILLS</label>
-            <li class="menu__option flex flex-column justify-center align-center">
-                <img class="menu__option__icon" src="iconos/contact-icon.svg" alt="">
-                <label for="contact--checkbox">CONTACT</label>
+            <li class="menu__option">
+                <label class="menu__option__label flex flex-column justify-center align-center" for="skill--checkbox">
+                    <img class="menu__option__label__icon" src="iconos/skill-icon.svg" alt="">
+                    <p class="menu__option__label__title">SKILLS</p>
+                </label>
+            <li class="menu__option">
+                <label class="menu__option__label flex flex-column justify-center align-center" for="contact--checkbox">
+                    <img class="menu__option__label__icon" src="iconos/contact-icon.svg" alt="">
+                    <p class="menu__option__label__title">CONTACT</p>
+                </label>
             </li>
         </ul>
         

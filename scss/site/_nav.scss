@@ -1,19 +1,26 @@
 // ------ $MENU
 .menu {
-    height: 20%;
+    height: 15%;
     gap: 25px;
     margin: auto;
 
     &__option {
         width: 80px;
         height: 60px;
-        font-size: $menu--font--size--mobile;
         opacity: .5;
+        list-style: none;
 
-        &__icon {
-            padding: $padding;
-            width: $icon-dimension-mobile;
-            height: $icon-dimension-mobile;
+        &__label {
+
+            &__icon {
+                padding: $padding;
+                width: $icon-dimension-mobile;
+                height: $icon-dimension-mobile;
+            }
+
+            &__title {
+                font-size: $menu--font--size--mobile;
+            }
         }
     }
 
@@ -23,11 +30,17 @@
 
         &__option {
             width: 150px;
-            font-size: $menu--font--size--deskopt;
 
-            &__icon {
-                width: $icon-dimension-deskopt;
-                height: $icon-dimension-deskopt;
+            &__label {
+
+                &__icon {
+                    width: $icon-dimension-deskopt;
+                    height: $icon-dimension-deskopt;
+                }
+    
+                &__title {
+                    font-size: $menu--font--size--deskopt;
+                }
             }
         }
     }
