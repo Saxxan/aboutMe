@@ -1,5 +1,4 @@
-@mixin absoluteDimensions ($top, $left) {
-    position: absolute;
+@mixin position ($top, $left) {
     top: $top;
     left: $left;
 }

@@ -5,16 +5,56 @@ header {
 .circuit{
     height: 100%;
     width: 100%;
-    margin:0 auto;
+    margin: 0 auto;
+
+    &__end {
+        width: 50px;
+
+        &__solar {
+            width: 50px;
+            height: 50px;
+        }
+
+        @media screen and (min-width: 900px) {
+            width: 75px;
+
+            &__solar {
+                width: 75px;
+                height: 75px;
+            }
+        }
+    }
 
     &__loader {
-        width: 100%;
-        @include absoluteDimensions(8.8%, 8%);
-        z-index: -1;
+        flex: 1;
+        
+        &__steps{
+            flex: 1;
+
+            &__step {
+                flex: 0 0 25%;
+                text-align: center;
+
+                p[class^="circuit__loader__steps__step__title"] {
+                    font-size: 12px;
+                    color: $grey;
+                    transition: all 1s linear 2s;
+                }
+
+                svg {
+                    width: 30px;
+                    height: 30px;
+                    fill: $grey;
+                    transition: all 1s linear 1.5s;
+                }
+            }
+        }
 
         &__line {
-            width: 12%;
-            height: 2px;
+            width: 12.5%;
+            height: 3px;
+            margin-top: -6px;
+            z-index: -1;
             border-radius: 2px;
             background-color: $white;
             box-shadow: 
@@ -22,69 +62,7 @@ header {
             0 0 11px $orange,
             0 0 40px $orange,
             0 0 80px $orange;
-
             transition: width 2s linear;
         }
-    }
-
-    &__solar--panel {
-        width: auto;
-        height: 10%;
-        @include absoluteDimensions(0,0);
-    }
-
-    p[class^="circuit__title"] {
-        font-size: 10px;
-        color: $grey;
-        transition: all 1s linear 2s;
-    }
-
-    &__title {
-        &--home {
-            @include absoluteDimensions(4%, calc(20% - 3%));
-        }
-
-        &--about {
-            @include absoluteDimensions(4%, calc(40% - 3%));
-        }
-
-        &--skills {
-            @include absoluteDimensions(4%, calc(60% - 3%));
-        }
-
-        &--contact {
-            @include absoluteDimensions(4%, calc(80% - 3%));
-        }
-    }
-
-    img[class^="circuit__switch"] {
-        width: auto;
-        height: 3%;
-        opacity: 0;
-    }
-
-    img[class^="circuit__switch--home"] {
-        @include absoluteDimensions(6.5%, calc(20% - 1.5%));
-    }
-
-    img[class^="circuit__switch--about"] {
-        @include absoluteDimensions(6.5%, calc(40% - 1.5%));
-    }
-
-    img[class^="circuit__switch--skills"] {
-        @include absoluteDimensions(6.5%, calc(60% - 1.5%));
-    }
-
-    // img[class^="circuit__switch--contact"] {
-    //     @include absoluteDimensions(6.5%, calc(80% - 1.5%));
-    // }
-
-    img[class^="circuit__battery"] {
-        width: auto;
-        height: 6%;
-        @include absoluteDimensions(3.6%, 90%);
-        opacity: 0;
-
-        transition: opacity .5s linear 2s;
     }
 }

@@ -20,33 +20,39 @@
     
     <!-- Header -->
     <header>
-        <section class="circuit flex flex-row">
-            <!-- Solar pannel -->
-            <img src="iconos/solar-panel.svg" alt="" class="circuit__solar--panel">
-            <!-- Line -->
-            <div class="circuit__loader">
-                <div class="circuit__loader__line"></div>
+        <section class="circuit flex">
+            <div class="circuit__end flex align-end">
+                <img class="circuit__end__solar" src="iconos/solar-panel.svg" alt="">                                    
             </div>
-            <!-- Titles -->
-            <p class="circuit__title--home">HOME</p>
-            <p class="circuit__title--about">ABOUT</p>
-            <p class="circuit__title--skills">SKILLS</p>
-            <p class="circuit__title--contact">CONTACT</p>
-            <!-- Switch icons -->
-            <img src="iconos/switch position off page.svg" alt="" class="circuit__switch--home--next">
-            <img src="iconos/switch position on page.svg" alt="" class="circuit__switch--home">
-            <img src="iconos/switch position off page.svg" alt="" class="circuit__switch--about--next">
-            <img src="iconos/switch position on page.svg" alt="" class="circuit__switch--about">
-            <img src="iconos/switch position off page.svg" alt="" class="circuit__switch--skills--next">
-            <img src="iconos/switch position on page.svg" alt="" class="circuit__switch--skills">
-            <!-- <img src="iconos/switch off.svg" alt="" class="circuit__switch--contact--off">
-            <img src="iconos/switch on.svg" alt="" class="circuit__switch--contact--on"> -->
-            <!-- Battery icons -->
-            <img src="iconos/battery-level-one.svg" alt="" class="circuit__battery--one">
-            <img src="iconos/battery-level-two.svg" alt="" class="circuit__battery--two">
-            <img src="iconos/battery-level-three.svg" alt="" class="circuit__battery--three">
-            <img src="iconos/battery-level-four.svg" alt="" class="circuit__battery--four">
-              
+            <section class="circuit__loader flex flex-column">
+                <ul class="circuit__loader__steps flex">
+                    <il class="circuit__loader__steps__step flex flex-column justify-end align-center">
+                        <p class="circuit__loader__steps__step__title--home">HOME</p>
+                        <svg class="circuit__loader__steps__step__node--home" width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 34C25.6867 34 28.7959 34.8535 29.7286 38H46V42H29.6711C29.0561 43.9128 27.4673 46 24 46C22.3133 46 19.2041 45.1465 18.2714 42H2V38H18.3289C18.9439 36.0872 20.5327 34 24 34Z" stroke="#9F9F9F" stroke-width="0.1"/>
+                        </svg>                                 
+                    </il>
+                    <il class="circuit__loader__steps__step flex flex-column justify-end align-center">
+                        <p class="circuit__loader__steps__step__title--about">ABOUT</p>
+                        <svg class="circuit__loader__steps__step__node--about" width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 34C25.6867 34 28.7959 34.8535 29.7286 38H46V42H29.6711C29.0561 43.9128 27.4673 46 24 46C22.3133 46 19.2041 45.1465 18.2714 42H2V38H18.3289C18.9439 36.0872 20.5327 34 24 34Z" stroke="#9F9F9F" stroke-width="0.1"/>
+                        </svg>
+                    </il>
+                    <il class="circuit__loader__steps__step flex flex-column justify-end align-center">
+                        <p class="circuit__loader__steps__step__title--skills">SKILLS</p>
+                        <svg class="circuit__loader__steps__step__node--skills" width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 34C25.6867 34 28.7959 34.8535 29.7286 38H46V42H29.6711C29.0561 43.9128 27.4673 46 24 46C22.3133 46 19.2041 45.1465 18.2714 42H2V38H18.3289C18.9439 36.0872 20.5327 34 24 34Z" stroke="#9F9F9F" stroke-width="0.1"/>
+                        </svg>
+                    </il>
+                    <il class="circuit__loader__steps__step flex flex-column justify-end align-center">
+                        <p class="circuit__loader__steps__step__title--contact">CONTACT</p>
+                        <svg class="circuit__loader__steps__step__node--contact" width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.3289 38C18.9439 36.0872 20.5327 34 24 34C28.8 34 30 38 30 40C30 44.8 26 46 24 46C22.3133 46 19.2041 45.1465 18.2714 42H2V38H18.3289Z" stroke="#9F9F9F" stroke-width="0.1"/>
+                        </svg>                            
+                    </il>
+                </ul>
+                <div class="circuit__loader__line"></div>
+            </section>
         </section>
     </header>
 
@@ -82,7 +88,7 @@
                     </section>
                     <hr class="container2d__sections__about__line">
                     <section class="container2d__sections__about__text">
-                        <p class="container2d__sections__about__text__p">I work to help people and companies to create accesible and innovative web sites and get the users feel comfortable while navigating this sites.</p>
+                        <p class="container2d__sections__about__text__p">I work to help people and companies to create accessible and innovative web sites and get the users feel comfortable while navigating this sites.</p>
                     </section>
                 </section>
 
