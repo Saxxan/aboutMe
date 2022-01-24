@@ -9,19 +9,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Archivo+Black&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 
     <!-- Inputs -->
-    <input type="radio" name="nav" id="home--checkbox" class="check--home" checked>
-    <input type="radio" name="nav" id="about--checkbox" class="check--about">
-    <input type="radio" name="nav" id="skill--checkbox" class="check--skills">
-    <input type="radio" name="nav" id="contact--checkbox" class="check--contact">
+    <input type="radio" name="nav" id="home--checkbox" class="checkbox check--home" checked>
+    <input type="radio" name="nav" id="about--checkbox" class="checkbox check--about">
+    <input type="radio" name="nav" id="skill--checkbox" class="checkbox check--skills">
+    <input type="radio" name="nav" id="contact--checkbox" class="checkbox check--contact">
     
     <!-- Header -->
     <header>
         <section class="circuit flex">
-            <div class="circuit__end flex align-end">
+            <div class="circuit__end flex">
                 <img class="circuit__end__solar" src="iconos/solar-panel.svg" alt="">                                    
             </div>
             <section class="circuit__loader flex flex-column">
@@ -72,12 +73,12 @@
                         </section>
                     </section>
                     <section class="container2d__sections__home--bottom flex align-center">
-                        <section class="container2d__sections__home--bottom__text flex flex-column justify-center text-right">
+                        <section class="container2d__sections__home--bottom__text flex flex-column justify-center">
                             <h2>Electronic engineer</h2>
                             <h2>Front-end Developer</h2>
                             <h2>UX/UI Designer</h2>
                         </section>
-                        <div class="container2d__sections__home__img bottom--img border-left"></div>
+                        <div class="container2d__sections__home__img bottom--img"></div>
                     </section>
                 </section>
 
@@ -94,7 +95,7 @@
 
                 <!-- SKILLS Section -->
                 <section class="container2d__sections__section container2d__sections__skills flex flex-wrap justify-center align-center">
-                    <section class="container2d__sections__skills__text flex flex-column justify-start">
+                    <section class="container2d__sections__skills__text flex flex-column">
                         <h3 class="container2d__sections__skills__text__title">Software Skills</h3>
                         <ul class="container2d__sections__skills__text__list">
                             <li>Semantic HTML</li>
@@ -107,7 +108,7 @@
                             <li>Java</li>
                         </ul>
                     </section>
-                    <section class="container2d__sections__skills__text flex flex-column justify-start">
+                    <section class="container2d__sections__skills__text flex flex-column">
                         <h3 class="container2d__sections__skills__text__title">Design Skills</h3>
                         <ul class="container2d__sections__skills__text__list">
                             <li>Figma</li>
@@ -119,7 +120,7 @@
                 </section>
 
                 <!-- CONTACT Section -->
-                <section class="container2d__sections__section container2d__sections__contact flex flex-wrap justify-center align-start">
+                <section class="container2d__sections__section container2d__sections__contact flex flex-wrap justify-center">
                     <section class="container2d__sections__contact__links flex justify-center align-center">
                         <a class="container2d__sections__contact__links__link flex align-center" href="https://github.com/Saxxan">
                             <img class="container2d__sections__contact__links__link__icon flex" src="iconos/github.svg" alt="">

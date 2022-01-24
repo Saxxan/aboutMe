@@ -1,5 +1,6 @@
 // -------$SKILLS
 .container2d__sections__skills {
+
     &__text {
         width: 250px;
         padding: 5px;
@@ -20,7 +21,7 @@
         }
     }
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 700px) {
         gap: 40px;
 
         &__text {

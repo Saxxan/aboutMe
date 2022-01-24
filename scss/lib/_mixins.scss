@@ -2,3 +2,7 @@
     top: $top;
     left: $left;
 }
+
+@mixin padding($value) {
+    padding: $value;
+}

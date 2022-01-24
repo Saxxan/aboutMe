@@ -1,15 +1,3 @@
-.opacity-full {
+.opaque {
     opacity: 1;
-}
-
-.text-right {
-    text-align: right;
-}
-
-.border-left {
-    border-left: 2px solid $white;
-}
-
-@mixin padding($value) {
-    padding: $value;
 }

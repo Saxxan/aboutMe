@@ -46,6 +46,7 @@
         &__text {
             height: 130px;
             padding: $padding;
+            text-align: right;
         }
 
         .bottom--img {
@@ -53,6 +54,7 @@
             background-repeat: no-repeat;
             background-size: contain;
             background-position: bottom left;
+            border-left: 2px solid $white;
         }
     }
 
