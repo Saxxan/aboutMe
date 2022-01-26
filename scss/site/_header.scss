@@ -1,3 +1,5 @@
+// ------$HEADER
+
 header {
     height: 10vh;
 }
@@ -36,11 +38,16 @@ header {
                 text-align: center;
 
                 [class^="circuit__loader__steps__step__title"] {
-                    font-size: 12px;
+                    font-size: $menu--font--size--mobile;
+                    letter-spacing: 1px;
                     color: $grey;
                     transition: all 1s ease-in-out 2s;
                     margin-top: 30px;
                     cursor: pointer;
+
+                    @media screen and (min-width: 800px) {
+                        font-size: $menu--font--size--deskopt;
+                    }
                 }
 
                 [class^="circuit__loader__steps__step__node"] {
