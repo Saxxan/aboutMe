@@ -13,7 +13,12 @@ input[type="radio"] {
     }
 
     & ~ header .circuit__loader__steps__step__node--home {
-        fill: $white;
+        background-color: $white;
+        box-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 18px $orange,
+            0 0 25px $orange;
     }
 
     & ~ header .circuit__loader__steps__step__title--home {
@@ -39,12 +44,14 @@ input[type="radio"] {
         width: 37.5%;
     }
 
-    & ~ header .circuit__loader__steps__step__node--about {
-        fill: $white;
-    }
-
+    & ~ header .circuit__loader__steps__step__node--about, 
     & ~ header .circuit__loader__steps__step__node--home {
-        fill: $white;
+        background-color: $white;
+        box-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 18px $orange,
+            0 0 25px $orange;
     }
 
     & ~ header .circuit__loader__steps__step__title--about {
@@ -70,16 +77,15 @@ input[type="radio"] {
         width: 62.5%;
     }
 
-    & ~ header .circuit__loader__steps__step__node--skills {
-        fill: $white;
-    }
-
+    & ~ header .circuit__loader__steps__step__node--skills, 
+    & ~ header .circuit__loader__steps__step__node--home, 
     & ~ header .circuit__loader__steps__step__node--about {
-        fill: $white;
-    }
-
-    & ~ header .circuit__loader__steps__step__node--home {
-        fill: $white;
+        background-color: $white;
+        box-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 18px $orange,
+            0 0 25px $orange;
     }
 
     & ~ header .circuit__loader__steps__step__title--skills {
@@ -105,20 +111,16 @@ input[type="radio"] {
         width: 87.5%;
     }
 
-    & ~ header .circuit__loader__steps__step__node--contact {
-        fill: $white;
-    }
-
+    & ~ header .circuit__loader__steps__step__node--contact,
+    & ~ header .circuit__loader__steps__step__node--home,
+    & ~ header .circuit__loader__steps__step__node--about,
     & ~ header .circuit__loader__steps__step__node--skills {
-        fill: $white;
-    }
-
-    & ~ header .circuit__loader__steps__step__node--about {
-        fill: $white;
-    }
-
-    & ~ header .circuit__loader__steps__step__node--home {
-        fill: $white;
+        background-color: $white;
+        box-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 18px $orange,
+            0 0 25px $orange;
     }
 
     & ~ header .circuit__loader__steps__step__title--contact {
@@ -156,6 +158,8 @@ input[type="submit"] {
     letter-spacing: 2px;
     opacity: 50%;
     cursor: pointer;
+
+    transition: all .5s ease-out;
 
     &:hover, &:focus {
         background-color: $orange;

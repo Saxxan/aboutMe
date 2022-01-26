@@ -1,4 +1,18 @@
-@mixin position ($top, $left) {
-    top: $top;
-    left: $left;
-}
+// ------$MIXINS
+
+// Mediaquery mixins
+@mixin phone-dimensions {
+    @media (max-width: 400px) { @content; }
+  }
+  @mixin tablet-portrait-dimensions {
+    @media (min-width: 400px) { @content; }
+  }
+  @mixin tablet-landscape-dimensions {
+    @media (min-width: 900px) { @content; }
+  }
+  @mixin deskopt-dimensions {
+    @media (min-width: 1280px) { @content; }
+  }
+  @mixin big-deskopt-dimensions {
+    @media (min-width: 1920px) { @content; }
+  }

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Archivo+Black&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 
@@ -21,34 +22,26 @@
     <!-- Header -->
     <header>
         <section class="circuit flex">
-            <div class="circuit__end flex align-end">
+            <div class="circuit__end flex">
                 <img class="circuit__end__solar" src="iconos/solar-panel.svg" alt="">                                    
             </div>
             <section class="circuit__loader flex flex-column">
                 <ul class="circuit__loader__steps flex">
-                    <il class="circuit__loader__steps__step flex flex-column justify-end align-center">
+                    <il class="circuit__loader__steps__step flex flex-column justify-between align-center">
                         <p class="circuit__loader__steps__step__title--home">HOME</p>
-                        <svg class="circuit__loader__steps__step__node--home" width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M24 34C25.6867 34 28.7959 34.8535 29.7286 38H46V42H29.6711C29.0561 43.9128 27.4673 46 24 46C22.3133 46 19.2041 45.1465 18.2714 42H2V38H18.3289C18.9439 36.0872 20.5327 34 24 34Z" stroke="#9F9F9F" stroke-width="0.1"/>
-                        </svg>                                 
+                        <div class="circuit__loader__steps__step__node--home"></div>                           
                     </il>
-                    <il class="circuit__loader__steps__step flex flex-column justify-end align-center">
+                    <il class="circuit__loader__steps__step flex flex-column justify-between align-center">
                         <p class="circuit__loader__steps__step__title--about">ABOUT</p>
-                        <svg class="circuit__loader__steps__step__node--about" width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M24 34C25.6867 34 28.7959 34.8535 29.7286 38H46V42H29.6711C29.0561 43.9128 27.4673 46 24 46C22.3133 46 19.2041 45.1465 18.2714 42H2V38H18.3289C18.9439 36.0872 20.5327 34 24 34Z" stroke="#9F9F9F" stroke-width="0.1"/>
-                        </svg>
+                        <div class="circuit__loader__steps__step__node--about"></div>
                     </il>
-                    <il class="circuit__loader__steps__step flex flex-column justify-end align-center">
+                    <il class="circuit__loader__steps__step flex flex-column justify-between align-center">
                         <p class="circuit__loader__steps__step__title--skills">SKILLS</p>
-                        <svg class="circuit__loader__steps__step__node--skills" width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M24 34C25.6867 34 28.7959 34.8535 29.7286 38H46V42H29.6711C29.0561 43.9128 27.4673 46 24 46C22.3133 46 19.2041 45.1465 18.2714 42H2V38H18.3289C18.9439 36.0872 20.5327 34 24 34Z" stroke="#9F9F9F" stroke-width="0.1"/>
-                        </svg>
+                        <div class="circuit__loader__steps__step__node--skills"></div>
                     </il>
-                    <il class="circuit__loader__steps__step flex flex-column justify-end align-center">
+                    <il class="circuit__loader__steps__step flex flex-column justify-between align-center">
                         <p class="circuit__loader__steps__step__title--contact">CONTACT</p>
-                        <svg class="circuit__loader__steps__step__node--contact" width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.3289 38C18.9439 36.0872 20.5327 34 24 34C28.8 34 30 38 30 40C30 44.8 26 46 24 46C22.3133 46 19.2041 45.1465 18.2714 42H2V38H18.3289Z" stroke="#9F9F9F" stroke-width="0.1"/>
-                        </svg>                            
+                        <div class="circuit__loader__steps__step__node--contact"></div>                          
                     </il>
                 </ul>
                 <div class="circuit__loader__line"></div>
@@ -72,54 +65,59 @@
                         </section>
                     </section>
                     <section class="container2d__sections__home--bottom flex align-center">
-                        <section class="container2d__sections__home--bottom__text flex flex-column justify-center text-right">
+                        <section class="container2d__sections__home--bottom__text flex flex-column justify-center">
                             <h2>Electronic engineer</h2>
                             <h2>Front-end Developer</h2>
                             <h2>UX/UI Designer</h2>
                         </section>
-                        <div class="container2d__sections__home__img bottom--img border-left"></div>
+                        <div class="container2d__sections__home__img bottom--img"></div>
                     </section>
                 </section>
 
                 <!-- About section -->
                 <section class="container2d__sections__section container2d__sections__about flex flex-column justify-center align-center" id="about">
                     <section class="container2d__sections__about__text">
-                        <p class="container2d__sections__about__text__p">Hi, I’m Salvador Puche Ibáñez. A resume about me would be: Animal and travel lover. Overall, I have a sober taste. I am ceaslessly eager to assume design and fron-end challenges, though.</p>
+                        <p class="container2d__sections__about__text__p">Hi, I’m Salvador Puche Ibáñez a front-end developer based in Valencia and interested in remote job. A resume about me would be: Animal and travel lover. Overall, I have a sober taste. I am ceaslessly eager to assume design and fron-end challenges, though.</p>
                     </section>
                     <hr class="container2d__sections__about__line">
                     <section class="container2d__sections__about__text">
-                        <p class="container2d__sections__about__text__p">I work to help people and companies to create accessible and innovative web sites and get the users feel comfortable while navigating this sites.</p>
+                        <p class="container2d__sections__about__text__p">I work to help people and companies to create accessible and innovative web sites and get users feel comfortable, easy and intuitive navigating these sites.</p>
                     </section>
                 </section>
 
                 <!-- SKILLS Section -->
-                <section class="container2d__sections__section container2d__sections__skills flex flex-wrap justify-center align-center">
-                    <section class="container2d__sections__skills__text flex flex-column justify-start">
+                <section class="container2d__sections__section container2d__sections__skills flex justify-center align-center">
+                    <section class="container2d__sections__skills__text flex flex-column">
                         <h3 class="container2d__sections__skills__text__title">Software Skills</h3>
                         <ul class="container2d__sections__skills__text__list">
                             <li>Semantic HTML</li>
                             <li>Responsive CSS</li>
-                            <li>JavaScript (Vue)</li>
-                            <li>SEO</li>
-                            <li>Prepross</li>
-                            <li>Linux</li>
-                            <li>C and C++</li>
+                            <li>JavaScript</li>
+                            <li>Git</li>
+                            <li>C++</li>
                             <li>Java</li>
                         </ul>
                     </section>
-                    <section class="container2d__sections__skills__text flex flex-column justify-start">
+                    <section class="container2d__sections__skills__text flex flex-column">
                         <h3 class="container2d__sections__skills__text__title">Design Skills</h3>
                         <ul class="container2d__sections__skills__text__list">
                             <li>Figma</li>
-                            <li>UX/UI</li>
-                            <li>Iconography</li>
-                            <li>SVG</li>
+                            <li>Animation</li>
+                            <li>Responsive design</li>
+                        </ul>
+                    </section>
+                    <section class="container2d__sections__skills__text flex flex-column">
+                        <h3 class="container2d__sections__skills__text__title">Social Skills</h3>
+                        <ul class="container2d__sections__skills__text__list">
+                            <li>Cooperative</li>
+                            <li>Proactive</li>
+                            <li>Empathic</li>
                         </ul>
                     </section>
                 </section>
 
                 <!-- CONTACT Section -->
-                <section class="container2d__sections__section container2d__sections__contact flex flex-wrap justify-center align-start">
+                <section class="container2d__sections__section container2d__sections__contact flex flex-wrap justify-center">
                     <section class="container2d__sections__contact__links flex justify-center align-center">
                         <a class="container2d__sections__contact__links__link flex align-center" href="https://github.com/Saxxan">
                             <img class="container2d__sections__contact__links__link__icon flex" src="iconos/github.svg" alt="">
