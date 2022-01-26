@@ -6,11 +6,11 @@
 
 html, body {
     height: 100vh;
+    overflow: hidden;
 }
 
 body {
     background-color: $black;
     color: $white;
     font-family: $body--font--family;
-    overflow: hidden;
 }

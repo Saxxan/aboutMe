@@ -87,13 +87,13 @@ p {
 
 html, body {
   height: 100vh;
+  overflow: hidden;
 }
 
 body {
   background-color: black;
   color: white;
   font-family: "Montserrat", sans-serif;
-  overflow: hidden;
 }
 
 input[type=radio] {
@@ -202,7 +202,7 @@ input[type=submit]:hover, input[type=submit]:focus {
 }
 
 header {
-  height: 10%;
+  height: 10vh;
 }
 
 .circuit {
@@ -236,11 +236,12 @@ header {
   flex: 0 0 25%;
   text-align: center;
 }
-.circuit__loader__steps__step p[class^=circuit__loader__steps__step__title] {
+.circuit__loader__steps__step [class^=circuit__loader__steps__step__title] {
   font-size: 12px;
   color: #9F9F9F;
   transition: all 1s ease-in-out 2s;
   margin-top: 30px;
+  cursor: pointer;
 }
 .circuit__loader__steps__step [class^=circuit__loader__steps__step__node] {
   transition: all 1s ease-in-out 2s;
@@ -261,8 +262,9 @@ header {
 }
 
 main {
-  height: 90%;
+  height: 90vh;
   margin: auto;
+  overflow: hidden;
 }
 
 .container2d {
@@ -491,6 +493,9 @@ main {
   height: 60px;
   opacity: 0.5;
   list-style: none;
+}
+.menu__option__label {
+  cursor: pointer;
 }
 .menu__option__label__icon {
   padding: 8px;

@@ -12,6 +12,8 @@
 
         &__label {
 
+            cursor: pointer;
+
             &__icon {
                 padding: $padding;
                 width: $icon-dimension-mobile;
