@@ -238,13 +238,20 @@ header {
 }
 .circuit__loader__steps__step [class^=circuit__loader__steps__step__title] {
   font-size: 12px;
+  letter-spacing: 1px;
   color: #9F9F9F;
-  transition: all 1s ease-in-out 2s;
+  transition: background-color 1s ease-in-out 1.7s;
+  transition: text-shadow 1s ease-in-out 1.7s;
   margin-top: 30px;
   cursor: pointer;
 }
+@media screen and (min-width: 800px) {
+  .circuit__loader__steps__step [class^=circuit__loader__steps__step__title] {
+    font-size: 15px;
+  }
+}
 .circuit__loader__steps__step [class^=circuit__loader__steps__step__node] {
-  transition: all 1s ease-in-out 2s;
+  transition: all 0.5s ease-in-out 1.7s;
   width: 10px;
   height: 10px;
   background-color: #9F9F9F;
@@ -268,7 +275,7 @@ main {
 }
 
 .container2d {
-  height: 85%;
+  margin-top: 20px;
 }
 .container2d__sections {
   height: 77%;
@@ -503,7 +510,7 @@ main {
   height: 40px;
 }
 .menu__option__label__title {
-  font-size: 13px;
+  font-size: 12px;
 }
 @media screen and (min-width: 1024px) {
   .menu {
