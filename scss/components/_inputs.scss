@@ -13,7 +13,12 @@ input[type="radio"] {
     }
 
     & ~ header .circuit__loader__steps__step__node--home {
-        fill: $white;
+        background-color: $white;
+        box-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 18px $orange,
+            0 0 25px $orange;
     }
 
     & ~ header .circuit__loader__steps__step__title--home {
@@ -40,11 +45,21 @@ input[type="radio"] {
     }
 
     & ~ header .circuit__loader__steps__step__node--about {
-        fill: $white;
+        background-color: $white;
+        box-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 18px $orange,
+            0 0 25px $orange;
     }
 
     & ~ header .circuit__loader__steps__step__node--home {
-        fill: $white;
+        background-color: $white;
+        box-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 18px $orange,
+            0 0 25px $orange;
     }
 
     & ~ header .circuit__loader__steps__step__title--about {
@@ -71,15 +86,30 @@ input[type="radio"] {
     }
 
     & ~ header .circuit__loader__steps__step__node--skills {
-        fill: $white;
+        background-color: $white;
+        box-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 18px $orange,
+            0 0 25px $orange;
     }
 
     & ~ header .circuit__loader__steps__step__node--about {
-        fill: $white;
+        background-color: $white;
+        box-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 18px $orange,
+            0 0 25px $orange;
     }
 
     & ~ header .circuit__loader__steps__step__node--home {
-        fill: $white;
+        background-color: $white;
+        box-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 18px $orange,
+            0 0 25px $orange;
     }
 
     & ~ header .circuit__loader__steps__step__title--skills {
@@ -106,19 +136,39 @@ input[type="radio"] {
     }
 
     & ~ header .circuit__loader__steps__step__node--contact {
-        fill: $white;
+        background-color: $white;
+        box-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 18px $orange,
+            0 0 25px $orange;
     }
 
     & ~ header .circuit__loader__steps__step__node--skills {
-        fill: $white;
+        background-color: $white;
+        box-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 18px $orange,
+            0 0 25px $orange;
     }
 
     & ~ header .circuit__loader__steps__step__node--about {
-        fill: $white;
+        background-color: $white;
+        box-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 18px $orange,
+            0 0 25px $orange;
     }
 
     & ~ header .circuit__loader__steps__step__node--home {
-        fill: $white;
+        background-color: $white;
+        box-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 18px $orange,
+            0 0 25px $orange;
     }
 
     & ~ header .circuit__loader__steps__step__title--contact {

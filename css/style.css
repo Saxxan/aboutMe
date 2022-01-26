@@ -136,7 +136,9 @@ input[type=radio] {
   opacity: 1;
 }
 .check--home:checked ~ header .circuit__loader__steps__step__node--home {
-  fill: white;
+  background-color: white;
+  -webkit-box-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 18px #FDC23E, 0 0 25px #FDC23E;
+          box-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 18px #FDC23E, 0 0 25px #FDC23E;
 }
 .check--home:checked ~ header .circuit__loader__steps__step__title--home {
   color: white;
@@ -154,10 +156,14 @@ input[type=radio] {
   width: 37.5%;
 }
 .check--about:checked ~ header .circuit__loader__steps__step__node--about {
-  fill: white;
+  background-color: white;
+  -webkit-box-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 18px #FDC23E, 0 0 25px #FDC23E;
+          box-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 18px #FDC23E, 0 0 25px #FDC23E;
 }
 .check--about:checked ~ header .circuit__loader__steps__step__node--home {
-  fill: white;
+  background-color: white;
+  -webkit-box-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 18px #FDC23E, 0 0 25px #FDC23E;
+          box-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 18px #FDC23E, 0 0 25px #FDC23E;
 }
 .check--about:checked ~ header .circuit__loader__steps__step__title--about {
   color: white;
@@ -175,13 +181,19 @@ input[type=radio] {
   width: 62.5%;
 }
 .check--skills:checked ~ header .circuit__loader__steps__step__node--skills {
-  fill: white;
+  background-color: white;
+  -webkit-box-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 18px #FDC23E, 0 0 25px #FDC23E;
+          box-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 18px #FDC23E, 0 0 25px #FDC23E;
 }
 .check--skills:checked ~ header .circuit__loader__steps__step__node--about {
-  fill: white;
+  background-color: white;
+  -webkit-box-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 18px #FDC23E, 0 0 25px #FDC23E;
+          box-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 18px #FDC23E, 0 0 25px #FDC23E;
 }
 .check--skills:checked ~ header .circuit__loader__steps__step__node--home {
-  fill: white;
+  background-color: white;
+  -webkit-box-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 18px #FDC23E, 0 0 25px #FDC23E;
+          box-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 18px #FDC23E, 0 0 25px #FDC23E;
 }
 .check--skills:checked ~ header .circuit__loader__steps__step__title--skills {
   color: white;
@@ -199,16 +211,24 @@ input[type=radio] {
   width: 87.5%;
 }
 .check--contact:checked ~ header .circuit__loader__steps__step__node--contact {
-  fill: white;
+  background-color: white;
+  -webkit-box-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 18px #FDC23E, 0 0 25px #FDC23E;
+          box-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 18px #FDC23E, 0 0 25px #FDC23E;
 }
 .check--contact:checked ~ header .circuit__loader__steps__step__node--skills {
-  fill: white;
+  background-color: white;
+  -webkit-box-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 18px #FDC23E, 0 0 25px #FDC23E;
+          box-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 18px #FDC23E, 0 0 25px #FDC23E;
 }
 .check--contact:checked ~ header .circuit__loader__steps__step__node--about {
-  fill: white;
+  background-color: white;
+  -webkit-box-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 18px #FDC23E, 0 0 25px #FDC23E;
+          box-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 18px #FDC23E, 0 0 25px #FDC23E;
 }
 .check--contact:checked ~ header .circuit__loader__steps__step__node--home {
-  fill: white;
+  background-color: white;
+  -webkit-box-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 18px #FDC23E, 0 0 25px #FDC23E;
+          box-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 18px #FDC23E, 0 0 25px #FDC23E;
 }
 .check--contact:checked ~ header .circuit__loader__steps__step__title--contact {
   color: white;
@@ -292,13 +312,15 @@ header {
   color: #9F9F9F;
   -webkit-transition: all 1s linear 2s;
   transition: all 1s linear 2s;
+  margin-top: 30px;
 }
-.circuit__loader__steps__step svg {
-  width: 30px;
-  height: 30px;
-  fill: #9F9F9F;
+.circuit__loader__steps__step [class^=circuit__loader__steps__step__node] {
   -webkit-transition: all 1s linear 1.5s;
   transition: all 1s linear 1.5s;
+  width: 10px;
+  height: 10px;
+  background-color: #9F9F9F;
+  border-radius: 50%;
 }
 .circuit__loader__line {
   width: 12.5%;
