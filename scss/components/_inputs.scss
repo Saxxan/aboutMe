@@ -207,6 +207,8 @@ input[type="submit"] {
     opacity: 50%;
     cursor: pointer;
 
+    transition: all .5s ease-out;
+
     &:hover, &:focus {
         background-color: $orange;
         opacity: 1;

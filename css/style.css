@@ -77,11 +77,11 @@ h2, h3 {
 }
 
 p {
-  font-size: 20px;
+  font-size: 15px;
 }
 @media screen and (min-width: 1024px) {
   p {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
@@ -260,6 +260,8 @@ input[type=submit] {
   letter-spacing: 2px;
   opacity: 50%;
   cursor: pointer;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 input[type=submit]:hover, input[type=submit]:focus {
   background-color: #FDC23E;
@@ -310,13 +312,13 @@ header {
 .circuit__loader__steps__step p[class^=circuit__loader__steps__step__title] {
   font-size: 12px;
   color: #9F9F9F;
-  -webkit-transition: all 1s linear 2s;
-  transition: all 1s linear 2s;
+  -webkit-transition: all 1s ease-in-out 2s;
+  transition: all 1s ease-in-out 2s;
   margin-top: 30px;
 }
 .circuit__loader__steps__step [class^=circuit__loader__steps__step__node] {
-  -webkit-transition: all 1s linear 1.5s;
-  transition: all 1s linear 1.5s;
+  -webkit-transition: all 1s ease-in-out 2s;
+  transition: all 1s ease-in-out 2s;
   width: 10px;
   height: 10px;
   background-color: #9F9F9F;
@@ -331,8 +333,8 @@ header {
   background-color: white;
   -webkit-box-shadow: 0 0 4px white, 0 0 11px #FDC23E, 0 0 40px #FDC23E, 0 0 80px #FDC23E;
           box-shadow: 0 0 4px white, 0 0 11px #FDC23E, 0 0 40px #FDC23E, 0 0 80px #FDC23E;
-  -webkit-transition: width 2s linear;
-  transition: width 2s linear;
+  -webkit-transition: width 2s ease-in-out;
+  transition: width 2s ease-in-out;
 }
 
 main {
@@ -347,10 +349,10 @@ main {
   height: 77%;
   width: 400%;
   position: absolute;
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 2s ease-in-out;
+  transition: -webkit-transform 2s ease-in-out;
+  transition: transform 2s ease-in-out;
+  transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;
 }
 .container2d__sections__section {
   width: 25%;
@@ -464,7 +466,7 @@ main {
   border-bottom: 2px solid white;
 }
 .container2d__sections__skills__text__list {
-  font-size: 20px;
+  font-size: 15px;
   list-style: none;
   padding-top: 5px;
 }
@@ -483,7 +485,7 @@ main {
     font-size: 30px;
   }
   .container2d__sections__skills__text__list {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
