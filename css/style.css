@@ -240,7 +240,8 @@ header {
   font-size: 12px;
   letter-spacing: 1px;
   color: #9F9F9F;
-  transition: all 1s ease-in-out 2s;
+  transition: background-color 1s ease-in-out 1.7s;
+  transition: text-shadow 1s ease-in-out 1.7s;
   margin-top: 30px;
   cursor: pointer;
 }
@@ -250,7 +251,7 @@ header {
   }
 }
 .circuit__loader__steps__step [class^=circuit__loader__steps__step__node] {
-  transition: all 1s ease-in-out 2s;
+  transition: all 0.5s ease-in-out 1.7s;
   width: 10px;
   height: 10px;
   background-color: #9F9F9F;
