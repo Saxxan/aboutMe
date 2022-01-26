@@ -1,16 +1,17 @@
 // -------$SKILLS
 .container2d__sections__skills {
 
+    flex-direction: column;
+    gap: 10px;
+
     &__text {
-        width: 250px;
+        width: 200px;
         padding: 5px;
         margin: 0 5px 5px;
         text-align: center;
 
         &__title {
             padding: 10px 10px 5px 10px;
-            font-family: $sec--title--font--family;
-            font-size: 25px;
             border-bottom: 2px solid $white;
         }
 
@@ -22,16 +23,12 @@
     }
 
     @media screen and (min-width: 700px) {
-        gap: 40px;
+        flex-direction: row;
 
         &__text {
-            width: 300px;
-            height: 300px;
+            width: 250px;
+            height: 200px;
             align-items: center;
-
-            &__title {
-                font-size: 30px;
-            }
 
             &__list {
                 font-size: $body--font--size--deskopt;

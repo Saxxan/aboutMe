@@ -44,15 +44,7 @@ input[type="radio"] {
         width: 37.5%;
     }
 
-    & ~ header .circuit__loader__steps__step__node--about {
-        background-color: $white;
-        box-shadow:
-            0 0 4px #fff,
-            0 0 11px #fff,
-            0 0 18px $orange,
-            0 0 25px $orange;
-    }
-
+    & ~ header .circuit__loader__steps__step__node--about, 
     & ~ header .circuit__loader__steps__step__node--home {
         background-color: $white;
         box-shadow:
@@ -85,25 +77,9 @@ input[type="radio"] {
         width: 62.5%;
     }
 
-    & ~ header .circuit__loader__steps__step__node--skills {
-        background-color: $white;
-        box-shadow:
-            0 0 4px #fff,
-            0 0 11px #fff,
-            0 0 18px $orange,
-            0 0 25px $orange;
-    }
-
+    & ~ header .circuit__loader__steps__step__node--skills, 
+    & ~ header .circuit__loader__steps__step__node--home, 
     & ~ header .circuit__loader__steps__step__node--about {
-        background-color: $white;
-        box-shadow:
-            0 0 4px #fff,
-            0 0 11px #fff,
-            0 0 18px $orange,
-            0 0 25px $orange;
-    }
-
-    & ~ header .circuit__loader__steps__step__node--home {
         background-color: $white;
         box-shadow:
             0 0 4px #fff,
@@ -135,34 +111,10 @@ input[type="radio"] {
         width: 87.5%;
     }
 
-    & ~ header .circuit__loader__steps__step__node--contact {
-        background-color: $white;
-        box-shadow:
-            0 0 4px #fff,
-            0 0 11px #fff,
-            0 0 18px $orange,
-            0 0 25px $orange;
-    }
-
+    & ~ header .circuit__loader__steps__step__node--contact,
+    & ~ header .circuit__loader__steps__step__node--home,
+    & ~ header .circuit__loader__steps__step__node--about,
     & ~ header .circuit__loader__steps__step__node--skills {
-        background-color: $white;
-        box-shadow:
-            0 0 4px #fff,
-            0 0 11px #fff,
-            0 0 18px $orange,
-            0 0 25px $orange;
-    }
-
-    & ~ header .circuit__loader__steps__step__node--about {
-        background-color: $white;
-        box-shadow:
-            0 0 4px #fff,
-            0 0 11px #fff,
-            0 0 18px $orange,
-            0 0 25px $orange;
-    }
-
-    & ~ header .circuit__loader__steps__step__node--home {
         background-color: $white;
         box-shadow:
             0 0 4px #fff,
