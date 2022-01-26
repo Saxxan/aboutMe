@@ -18,13 +18,17 @@ h2, h3 {
     padding: $padding;
 
     @media screen and (min-width: 1024px) {
-        font-size: 35px;
+        font-size: 25px;
     }
 }
 
 
 p {
     font-size: $body--font--size--mobile;
+
+    @media screen and (min-width: 700px) {
+        font-size: $body--font--size--tablet;
+    }
 
     @media screen and (min-width: 1024px) {
         font-size: $body--font--size--deskopt;

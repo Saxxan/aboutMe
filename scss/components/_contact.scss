@@ -1,10 +1,13 @@
 // ------$CONTACT
 .container2d__sections__contact {
 
+    align-items: flex-start;
+    flex-wrap: wrap;
+
     &__links {
         height: 80px;
         padding: 10px;
-        margin: 20px 0;
+        margin: 50px 0 10px;
         flex-direction: row;
 
         &__link {
@@ -32,7 +35,7 @@
         &__title {
             font-size: 30px;
             // ver si este mixin es útil para factorizar
-            @include padding(15px);
+            padding: 15px;
             margin: 0 auto;
         }
 
@@ -42,16 +45,16 @@
         }
     }
 
-    @media screen and (min-width: 1024px) {
-
-        gap: 50px;
+    @media screen and (min-width: 700px) {
+        gap: 30px;
 
         &__links {
-            width: 300px;
+            width: 200px;
             height: 100%;
             flex-direction: column;
             align-items: flex-start;
-            gap: 40px;
+            gap: 50px;
+            margin: 0;
 
             &__link {
                 flex-direction: row;
@@ -66,13 +69,26 @@
         }
 
         &__form {
-            width: 450px;
+            width: 350px;
             height: 100%;
             margin: 0;
 
             .input--message {
                 height: 150px;
             }
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        gap: 50px;
+
+        &__links {
+            width: 300px;
+        }
+
+        &__form {
+            width: 450px;
         }
     }
 }

@@ -38,14 +38,16 @@ header {
                 p[class^="circuit__loader__steps__step__title"] {
                     font-size: 12px;
                     color: $grey;
-                    transition: all 1s linear 2s;
+                    transition: all 1s ease-in-out 2s;
+                    margin-top: 30px;
                 }
 
-                svg {
-                    width: 30px;
-                    height: 30px;
-                    fill: $grey;
-                    transition: all 1s linear 1.5s;
+                [class^="circuit__loader__steps__step__node"] {
+                    transition: all 1s ease-in-out 2s;
+                    width: 10px;
+                    height: 10px;
+                    background-color: $grey;
+                    border-radius: 50%;
                 }
             }
         }
@@ -62,7 +64,7 @@ header {
             0 0 11px $orange,
             0 0 40px $orange,
             0 0 80px $orange;
-            transition: width 2s linear;
+            transition: width 2s ease-in-out;
         }
     }
 }
