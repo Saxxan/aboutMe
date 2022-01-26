@@ -291,13 +291,11 @@ main {
 }
 
 .container2d__sections__home {
-  overflow: hidden;
   gap: 10px;
 }
 .container2d__sections__home__img {
   width: 100px;
   height: 200px;
-  overflow: hidden;
 }
 .container2d__sections__home--top {
   gap: 20px;
@@ -339,6 +337,10 @@ main {
   .container2d__sections__home--top, .container2d__sections__home--bottom {
     width: 850px;
     gap: 75px;
+  }
+  .container2d__sections__home--top__text {
+    height: 200px;
+    margin-top: 30px;
   }
   .container2d__sections__home--bottom {
     justify-content: right;

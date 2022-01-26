@@ -1,13 +1,11 @@
 // -------$HOME
 .container2d__sections__home {
     
-    overflow: hidden;
     gap: 10px;
 
     &__img {
         width: 100px;
         height: 200px;
-        overflow: hidden;
     }
 
     &--top {
@@ -63,6 +61,13 @@
         &--top, &--bottom {
             width: 850px;
             gap: 75px;
+        }
+
+        &--top {
+            &__text {
+                height: 200px;
+                margin-top: 30px;
+            }
         }
 
         &--bottom {
