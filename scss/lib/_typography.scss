@@ -5,7 +5,11 @@ h1 {
     font-weight: 400;
     letter-spacing: $letter--space;
 
-    @media screen and (min-width: 1024px) {
+    @include tablet-landscape-dimensions {
+        font-size: 40px;
+    }
+
+    @include deskopt-dimensions {
         font-size: 50px;
     }
 }
@@ -17,20 +21,24 @@ h2, h3 {
     letter-spacing: $letter--space;
     padding: $padding;
 
-    @media screen and (min-width: 1024px) {
+    @include tablet-landscape-dimensions {
         font-size: 25px;
+    }
+
+    @include deskopt-dimensions {
+        font-size: 30px;
     }
 }
 
 
-p {
+p, li {
     font-size: $body--font--size--mobile;
 
-    @media screen and (min-width: 700px) {
+    @include tablet-portrait-dimensions {
         font-size: $body--font--size--tablet;
     }
 
-    @media screen and (min-width: 1024px) {
+    @include deskopt-dimensions {
         font-size: $body--font--size--deskopt;
     }
 }

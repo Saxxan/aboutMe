@@ -56,8 +56,7 @@
         }
     }
 
-    @media screen and (min-width: 1024px) {
-
+    @include tablet-landscape-dimensions {
         &--top, &--bottom {
             width: 850px;
             gap: 75px;
@@ -80,4 +79,3 @@
         }
     }
 }
-

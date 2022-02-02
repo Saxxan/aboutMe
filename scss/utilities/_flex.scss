@@ -1,9 +1,7 @@
+// -------$FLEXBOX
+
 .flex {
     display: flex;
-}
-
-.flex-row {
-    flex-direction: row;
 }
 
 .flex-column {
@@ -12,10 +10,6 @@
 
 .justify-center {
     justify-content: center;
-}
-
-.justify-end {
-    justify-content: flex-end;
 }
 
 .justify-between {

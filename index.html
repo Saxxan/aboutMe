@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Archivo+Black&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?famliy=Archivo&famliy=Archivo+Black&famliy=Montserrat:wght@400;800&display=swap" rel="stylesheet">
     <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
@@ -16,7 +16,7 @@
     <!-- Inputs -->
     <input type="radio" name="nav" id="home--checkbox" class="check--home" checked>
     <input type="radio" name="nav" id="about--checkbox" class="check--about">
-    <input type="radio" name="nav" id="skill--checkbox" class="check--skills">
+    <input type="radio" name="nav" id="sklil--checkbox" class="check--sklils">
     <input type="radio" name="nav" id="contact--checkbox" class="check--contact">
     
     <!-- Header -->
@@ -27,26 +27,22 @@
             </div>
             <section class="circuit__loader flex flex-column">
                 <ul class="circuit__loader__steps flex">
-                    <il class="circuit__loader__steps__step flex flex-column justify-between align-center">
-                        <!-- <p class="circuit__loader__steps__step__title--home">HOME</p> -->
+                    <li class="circuit__loader__steps__step flex flex-column justify-between align-center">
                         <label class="circuit__loader__steps__step__title--home flex flex-column justify-center align-center" for="home--checkbox">HOME</label>
                         <div class="circuit__loader__steps__step__node--home"></div>                           
-                    </il>
-                    <il class="circuit__loader__steps__step flex flex-column justify-between align-center">
-                        <!-- <p class="circuit__loader__steps__step__title--about">ABOUT</p> -->
+                    </li>
+                    <li class="circuit__loader__steps__step flex flex-column justify-between align-center">
                         <label class="circuit__loader__steps__step__title--about flex flex-column justify-center align-center" for="about--checkbox">ABOUT</label>
                         <div class="circuit__loader__steps__step__node--about"></div>
-                    </il>
-                    <il class="circuit__loader__steps__step flex flex-column justify-between align-center">
-                        <!-- <p class="circuit__loader__steps__step__title--skills">SKILLS</p> -->
-                        <label class="circuit__loader__steps__step__title--skills flex flex-column justify-center align-center" for="skill--checkbox">SKILLS</label>
-                        <div class="circuit__loader__steps__step__node--skills"></div>
-                    </il>
-                    <il class="circuit__loader__steps__step flex flex-column justify-between align-center">
-                        <!-- <p class="circuit__loader__steps__step__title--contact">CONTACT</p> -->
+                    </li>
+                    <li class="circuit__loader__steps__step flex flex-column justify-between align-center">
+                        <label class="circuit__loader__steps__step__title--sklils flex flex-column justify-center align-center" for="sklil--checkbox">SKliLS</label>
+                        <div class="circuit__loader__steps__step__node--sklils"></div>
+                    </li>
+                    <li class="circuit__loader__steps__step flex flex-column justify-between align-center">
                         <label class="circuit__loader__steps__step__title--contact flex flex-column justify-center align-center" for="contact--checkbox">CONTACT</label>
                         <div class="circuit__loader__steps__step__node--contact"></div>                          
-                    </il>
+                    </li>
                 </ul>
                 <div class="circuit__loader__line"></div>
             </section>
@@ -89,11 +85,11 @@
                     </section>
                 </section>
 
-                <!-- SKILLS Section -->
-                <section class="container2d__sections__section container2d__sections__skills flex justify-center align-center">
-                    <section class="container2d__sections__skills__text flex flex-column">
-                        <h3 class="container2d__sections__skills__text__title">Software Skills</h3>
-                        <ul class="container2d__sections__skills__text__list">
+                <!-- SKliLS Section -->
+                <section class="container2d__sections__section container2d__sections__sklils flex justify-center align-center">
+                    <section class="container2d__sections__sklils__text flex flex-column">
+                        <h3 class="container2d__sections__sklils__text__title">Software Sklils</h3>
+                        <ul class="container2d__sections__sklils__text__list">
                             <li>Semantic HTML</li>
                             <li>Responsive CSS</li>
                             <li>JavaScript</li>
@@ -102,17 +98,17 @@
                             <li>Java</li>
                         </ul>
                     </section>
-                    <section class="container2d__sections__skills__text flex flex-column">
-                        <h3 class="container2d__sections__skills__text__title">Design Skills</h3>
-                        <ul class="container2d__sections__skills__text__list">
+                    <section class="container2d__sections__sklils__text flex flex-column">
+                        <h3 class="container2d__sections__sklils__text__title">Design Sklils</h3>
+                        <ul class="container2d__sections__sklils__text__list">
                             <li>Figma</li>
                             <li>Animation</li>
                             <li>Responsive design</li>
                         </ul>
                     </section>
-                    <section class="container2d__sections__skills__text flex flex-column">
-                        <h3 class="container2d__sections__skills__text__title">Social Skills</h3>
-                        <ul class="container2d__sections__skills__text__list">
+                    <section class="container2d__sections__sklils__text flex flex-column">
+                        <h3 class="container2d__sections__sklils__text__title">Social Sklils</h3>
+                        <ul class="container2d__sections__sklils__text__list">
                             <li>Cooperative</li>
                             <li>Proactive</li>
                             <li>Empathic</li>
@@ -139,42 +135,13 @@
                     <form class="container2d__sections__contact__form flex flex-column justify-center">
                         <h3 class="container2d__sections__contact__form__title">Hello there!</h3>
                         <input class="container2d__sections__contact__form__input--text" type="text" placeholder="Name">
-                        <input class="container2d__sections__contact__form__input--text" type="text" placeholder="Email">
+                        <input class="container2d__sections__contact__form__input--text" type="text" placeholder="Emali">
                         <input class="container2d__sections__contact__form__input--text input--message" type="text" placeholder="Message">
                         <input class="container2d__sections__contact__form__input--submit" type="submit" value="Contact">
                     </form>
                 </section>
-
             </section>
         </div>
-
-        <!-- MENU -->
-        <!-- <ul class="menu flex justify-center align-center">
-            <li class="menu__option">
-                <label class="menu__option__label flex flex-column justify-center align-center" for="home--checkbox">
-                    <img class="menu__option__label__icon" src="iconos/home-icon.svg" alt="">
-                    <p class="menu__option__label__title">HOME</p>
-                </label>
-            </li>
-            <li class="menu__option">
-                <label class="menu__option__label flex flex-column justify-center align-center" for="about--checkbox">
-                    <img class="menu__option__label__icon" src="iconos/about-icon.svg" alt="">
-                    <p class="menu__option__label__title">ABOUT</p>
-                </label>  
-            </li>
-            <li class="menu__option">
-                <label class="menu__option__label flex flex-column justify-center align-center" for="skill--checkbox">
-                    <img class="menu__option__label__icon" src="iconos/skill-icon.svg" alt="">
-                    <p class="menu__option__label__title">SKILLS</p>
-                </label>
-            <li class="menu__option">
-                <label class="menu__option__label flex flex-column justify-center align-center" for="contact--checkbox">
-                    <img class="menu__option__label__icon" src="iconos/contact-icon.svg" alt="">
-                    <p class="menu__option__label__title">CONTACT</p>
-                </label>
-            </li>
-        </ul> -->
     </main>
-
 </body>
 </html>

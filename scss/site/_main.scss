@@ -1,12 +1,11 @@
+// -------$MAIN
 main {
     height: 90vh;
     margin: auto;
-    overflow: hidden;
 }
 
 // ------$SECTIONS
 .container2d {
-    // height: 90%;
     margin-top: 20px;
 
     &__sections {
@@ -19,7 +18,6 @@ main {
             width: 25%;
             height: 100%;
             position: absolute;  
-            overflow: hidden; 
         }
 
         &__about {
@@ -34,4 +32,5 @@ main {
             transform: translateX(300%);
         }
     }
-}   
+} 
+  

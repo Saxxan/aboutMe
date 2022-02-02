@@ -34,7 +34,6 @@
 
         &__title {
             font-size: 30px;
-            // ver si este mixin es útil para factorizar
             padding: 15px;
             margin: 0 auto;
         }
@@ -45,7 +44,7 @@
         }
     }
 
-    @media screen and (min-width: 700px) {
+    @include tablet-landscape-dimensions {
         gap: 30px;
 
         &__links {
@@ -79,7 +78,7 @@
         }
     }
 
-    @media screen and (min-width: 1024px) {
+    @include deskopt-dimensions {
 
         gap: 50px;
 

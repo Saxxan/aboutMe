@@ -8,10 +8,6 @@ input[type="radio"] {
         transform: translateX(0);
     }
 
-    & ~ main .menu li:nth-child(1) {
-        opacity: 1;
-    }
-
     & ~ header .circuit__loader__steps__step__node--home {
         background-color: $white;
         box-shadow:
@@ -34,10 +30,6 @@ input[type="radio"] {
 .check--about:checked {
     & ~ main .container2d .container2d__sections{
         transform: translateX(-25%);
-    }
-
-    & ~ main .menu li:nth-child(2)  {
-        opacity: 1;
     }
 
     & ~ header .circuit__loader__line {
@@ -69,10 +61,6 @@ input[type="radio"] {
         transform: translateX(-50%);
     }
 
-    & ~ main .menu li:nth-child(3)  {
-        opacity: 1;
-    }
-
     & ~ header .circuit__loader__line {
         width: 62.5%;
     }
@@ -101,10 +89,6 @@ input[type="radio"] {
 .check--contact:checked {
     & ~ main .container2d .container2d__sections{
         transform: translateX(-75%);
-    }
-
-    & ~ main .menu li:nth-child(4) {
-        opacity: 1;
     }
 
     & ~ header .circuit__loader__line {
@@ -140,7 +124,7 @@ input[type="text"] {
     margin: 0 0 10px;
     border-radius: 7px;
 
-    @media screen and (min-width: 1024px) {
+    @include deskopt-dimensions {
         height: 50px;
     }
 }
@@ -166,4 +150,3 @@ input[type="submit"] {
         opacity: 1;
     }
 }
-
