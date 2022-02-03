@@ -18,10 +18,16 @@
             flex-direction: column;
             justify-content: center;
 
+            transition: all ease .5s;
+
             &__icon {
                 width: $icon-dimension-mobile;
                 height: $icon-dimension-mobile;
                 margin-bottom: 10px;
+            }
+
+            &:hover {
+                transform: scale(1.1);
             }
         }
     }

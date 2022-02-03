@@ -123,6 +123,11 @@ input[type="text"] {
     padding: 10px;
     margin: 0 0 10px;
     border-radius: 7px;
+    transition: transform .5s ease;
+
+    &:focus {
+        transform: scale(1.05);
+    }
 
     @include deskopt-dimensions {
         height: 50px;
@@ -148,5 +153,6 @@ input[type="submit"] {
     &:hover, &:focus {
         background-color: $orange;
         opacity: 1;
+        transform: scale(1.1);
     }
 }

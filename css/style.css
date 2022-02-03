@@ -156,6 +156,10 @@ input[type=text] {
   padding: 10px;
   margin: 0 0 10px;
   border-radius: 7px;
+  transition: transform 0.5s ease;
+}
+input[type=text]:focus {
+  transform: scale(1.05);
 }
 @media screen and (min-width: 1280px) {
   input[type=text] {
@@ -181,6 +185,7 @@ input[type=submit] {
 input[type=submit]:hover, input[type=submit]:focus {
   background-color: #FDC23E;
   opacity: 1;
+  transform: scale(1.1);
 }
 
 header {
@@ -396,11 +401,15 @@ main {
   cursor: pointer;
   flex-direction: column;
   justify-content: center;
+  transition: all ease 0.5s;
 }
 .container2d__sections__contact__links__link__icon {
   width: 40px;
   height: 40px;
   margin-bottom: 10px;
+}
+.container2d__sections__contact__links__link:hover {
+  transform: scale(1.1);
 }
 .container2d__sections__contact__form {
   width: 90vw;
