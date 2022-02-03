@@ -10,15 +10,13 @@ header {
     margin: 0 auto;
 
     &__end {
-        width: 50px;
 
         &__solar {
             width: 50px;
             height: 50px;
         }
 
-        @media screen and (min-width: 900px) {
-            width: 75px;
+        @include tablet-landscape-dimensions {
 
             &__solar {
                 width: 75px;
@@ -41,12 +39,11 @@ header {
                     font-size: $menu--font--size--mobile;
                     letter-spacing: 1px;
                     color: $grey;
-                    transition: background-color 1s ease-in-out 1.7s;
-                    transition: text-shadow 1s ease-in-out 1.7s;
+                    transition: all 1s ease-in-out 1.7s;
                     margin-top: 30px;
                     cursor: pointer;
 
-                    @media screen and (min-width: 800px) {
+                    @include tablet-landscape-dimensions {
                         font-size: $menu--font--size--deskopt;
                     }
                 }
