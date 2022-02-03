@@ -1,3 +1,5 @@
+// -------$ABOUT
+
 .container2d__sections__about {
 
     &__text {
@@ -14,7 +16,7 @@
         width: 50%;
     }
 
-    @media screen and (min-width: 700px) {
+    @include tablet-landscape-dimensions {
         &__text {
             width: 650px;
         }

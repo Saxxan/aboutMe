@@ -2,20 +2,12 @@
   display: flex;
 }
 
-.flex-row {
-  flex-direction: row;
-}
-
 .flex-column {
   flex-direction: column;
 }
 
 .justify-center {
   justify-content: center;
-}
-
-.justify-end {
-  justify-content: flex-end;
 }
 
 .justify-between {
@@ -26,17 +18,18 @@
   align-items: center;
 }
 
-.opaque {
-  opacity: 1;
-}
-
 h1 {
   font-size: 30px;
   font-family: "Archivo Black", sans-serif;
   font-weight: 400;
   letter-spacing: 2px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
   h1 {
     font-size: 50px;
   }
@@ -49,22 +42,27 @@ h2, h3 {
   letter-spacing: 2px;
   padding: 8px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 800px) {
   h2, h3 {
     font-size: 25px;
   }
 }
+@media screen and (min-width: 1280px) {
+  h2, h3 {
+    font-size: 30px;
+  }
+}
 
-p {
+p, li {
   font-size: 15px;
 }
-@media screen and (min-width: 700px) {
-  p {
+@media screen and (min-width: 500px) {
+  p, li {
     font-size: 18px;
   }
 }
-@media screen and (min-width: 1024px) {
-  p {
+@media screen and (min-width: 1280px) {
+  p, li {
     font-size: 20px;
   }
 }
@@ -85,15 +83,11 @@ p {
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100vh;
-  overflow: hidden;
-}
-
 body {
   background-color: black;
   color: white;
   font-family: "Montserrat", sans-serif;
+  overflow: hidden;
 }
 
 input[type=radio] {
@@ -102,9 +96,6 @@ input[type=radio] {
 
 .check--home:checked ~ main .container2d .container2d__sections {
   transform: translateX(0);
-}
-.check--home:checked ~ main .menu li:nth-child(1) {
-  opacity: 1;
 }
 .check--home:checked ~ header .circuit__loader__steps__step__node--home {
   background-color: white;
@@ -117,9 +108,6 @@ input[type=radio] {
 
 .check--about:checked ~ main .container2d .container2d__sections {
   transform: translateX(-25%);
-}
-.check--about:checked ~ main .menu li:nth-child(2) {
-  opacity: 1;
 }
 .check--about:checked ~ header .circuit__loader__line {
   width: 37.5%;
@@ -136,9 +124,6 @@ input[type=radio] {
 .check--skills:checked ~ main .container2d .container2d__sections {
   transform: translateX(-50%);
 }
-.check--skills:checked ~ main .menu li:nth-child(3) {
-  opacity: 1;
-}
 .check--skills:checked ~ header .circuit__loader__line {
   width: 62.5%;
 }
@@ -153,9 +138,6 @@ input[type=radio] {
 
 .check--contact:checked ~ main .container2d .container2d__sections {
   transform: translateX(-75%);
-}
-.check--contact:checked ~ main .menu li:nth-child(4) {
-  opacity: 1;
 }
 .check--contact:checked ~ header .circuit__loader__line {
   width: 87.5%;
@@ -174,8 +156,12 @@ input[type=text] {
   padding: 10px;
   margin: 0 0 10px;
   border-radius: 7px;
+  transition: transform 0.5s ease;
 }
-@media screen and (min-width: 1024px) {
+input[type=text]:focus {
+  transform: scale(1.05);
+}
+@media screen and (min-width: 1280px) {
   input[type=text] {
     height: 50px;
   }
@@ -199,6 +185,7 @@ input[type=submit] {
 input[type=submit]:hover, input[type=submit]:focus {
   background-color: #FDC23E;
   opacity: 1;
+  transform: scale(1.1);
 }
 
 header {
@@ -210,17 +197,11 @@ header {
   width: 100%;
   margin: 0 auto;
 }
-.circuit__end {
-  width: 50px;
-}
 .circuit__end__solar {
   width: 50px;
   height: 50px;
 }
-@media screen and (min-width: 900px) {
-  .circuit__end {
-    width: 75px;
-  }
+@media screen and (min-width: 800px) {
   .circuit__end__solar {
     width: 75px;
     height: 75px;
@@ -240,8 +221,7 @@ header {
   font-size: 12px;
   letter-spacing: 1px;
   color: #9F9F9F;
-  transition: background-color 1s ease-in-out 1.7s;
-  transition: text-shadow 1s ease-in-out 1.7s;
+  transition: all 1s ease-in-out 1.7s;
   margin-top: 30px;
   cursor: pointer;
 }
@@ -271,7 +251,6 @@ header {
 main {
   height: 90vh;
   margin: auto;
-  overflow: hidden;
 }
 
 .container2d {
@@ -287,7 +266,6 @@ main {
   width: 25%;
   height: 100%;
   position: absolute;
-  overflow: hidden;
 }
 .container2d__sections__about {
   transform: translateX(100%);
@@ -342,7 +320,7 @@ main {
   background-position: bottom left;
   border-left: 2px solid white;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 800px) {
   .container2d__sections__home--top, .container2d__sections__home--bottom {
     width: 850px;
     gap: 75px;
@@ -371,7 +349,7 @@ main {
 .container2d__sections__about__line {
   width: 50%;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .container2d__sections__about__text {
     width: 650px;
   }
@@ -392,21 +370,17 @@ main {
   border-bottom: 2px solid white;
 }
 .container2d__sections__skills__text__list {
-  font-size: 15px;
   list-style: none;
   padding-top: 5px;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .container2d__sections__skills {
     flex-direction: row;
   }
   .container2d__sections__skills__text {
-    width: 250px;
+    width: 300px;
     height: 200px;
     align-items: center;
-  }
-  .container2d__sections__skills__text__list {
-    font-size: 20px;
   }
 }
 
@@ -427,11 +401,15 @@ main {
   cursor: pointer;
   flex-direction: column;
   justify-content: center;
+  transition: all ease 0.5s;
 }
 .container2d__sections__contact__links__link__icon {
   width: 40px;
   height: 40px;
   margin-bottom: 10px;
+}
+.container2d__sections__contact__links__link:hover {
+  transform: scale(1.1);
 }
 .container2d__sections__contact__form {
   width: 90vw;
@@ -448,7 +426,7 @@ main {
   height: 120px;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .container2d__sections__contact {
     gap: 30px;
   }
@@ -478,7 +456,7 @@ main {
     height: 150px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   .container2d__sections__contact {
     gap: 50px;
   }
@@ -487,43 +465,5 @@ main {
   }
   .container2d__sections__contact__form {
     width: 450px;
-  }
-}
-
-.menu {
-  height: 15%;
-  gap: 25px;
-  margin: auto;
-}
-.menu__option {
-  width: 80px;
-  height: 60px;
-  opacity: 0.5;
-  list-style: none;
-}
-.menu__option__label {
-  cursor: pointer;
-}
-.menu__option__label__icon {
-  padding: 8px;
-  width: 40px;
-  height: 40px;
-}
-.menu__option__label__title {
-  font-size: 12px;
-}
-@media screen and (min-width: 1024px) {
-  .menu {
-    max-width: 650px;
-  }
-  .menu__option {
-    width: 150px;
-  }
-  .menu__option__label__icon {
-    width: 48px;
-    height: 48px;
-  }
-  .menu__option__label__title {
-    font-size: 15px;
   }
 }
